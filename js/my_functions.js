@@ -1,31 +1,45 @@
 window.onload = function(){zoom(1)} //crida a la funció només carregar la pàgina
 
-W= screen.availWidth ;
-H=screen.availHeight;
+var img=document.getElementById("pic")
+
+W = $(window).width();
+
+$(window).resize(function(){
+        W = $(window).width(); // get new height after change
+        zoom(1);
+    });
+
 //ZOOM
 function zoom(zm) {
     img=document.getElementById("pic")
     wid=img.width
     ht=img.height
+    
+    $(window).resize(function(){
+        W = $(window).width(); // get new height after change
+        
+    });
 
     z_wid = (wid*zm);
     z_ht = (ht*zm);
-    if(z_wid < 630 || z_wid > 1400){ //Quan la imatge tingui valors per sota o per sota no deixem fer zoom
+    if(z_wid <= 600 || z_wid >= 1400){ //Quan la imatge tingui valors per sota o per sota no deixem fer zoom
       
        img.style.width=wid;
        img.style.height=ht;
-       img.style.marginLeft = -(img.width/2) + (W*1/4)+"px";
-        img.style.marginTop = -(img.height/2) + (H*160/387)+"px";
+       img.style.marginLeft = -(img.width/2) +W/2+"px";
+        img.style.marginTop = -(img.height/2) +300+"px";
       
     }
     else{
     img.style.width=(wid*zm)+"px"
     img.style.height=(ht*zm)+"px"
-        img.style.marginLeft = -(img.width/2) + (W*1/4)+"px";
-        img.style.marginTop = -(img.height/2) + (H*160/387)+"px";
+        img.style.marginLeft = -(img.width/2) + W/2+"px";
+        img.style.marginTop = -(img.height/2) +300+"px";
       }
   
 }
+
+
 
 //Smoothie zoom
 var intervalId; // keep the ret val from setTimeout()

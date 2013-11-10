@@ -45,6 +45,8 @@ li a{
   line-height: 10px;
 }
 
+.navbar-collapse:before, .navbar-collapse:after{display:inline; content:"";}
+
 .row {
 	background-color: transparent;
 }
@@ -55,7 +57,7 @@ li a{
 }
 
 .container{
-	background-color: blue;
+	background-color: transparent;
 
 }
 
@@ -131,8 +133,8 @@ li a{
 	 padding: 5px;
 }
 
-.navbar .nav > li > .lang{
-	padding-right: 3px;
+.navbar .navbar-right{
+	padding-right: 30px;
 
 	
 }
@@ -143,12 +145,15 @@ li a{
 }
 
 .image{
-	width:50%;
-    
-
+   
+   width:600px;
+   height: 600px;
    position:absolute;
-   top: 5%;
-   left: 25%;
+   top: 33px;
+   margin: 0 auto;
+   left:0;
+   right:0;
+
 }
 
 .image2{
@@ -180,7 +185,7 @@ li a{
 }
 
 .texto2{
-	background-color: red;
+	background-color: transparent;
 	font-family: "Arial";
 	text-align:center; 
     color:white;
@@ -190,7 +195,7 @@ li a{
     left:0;
     right:0;
   
-    margin-top:45%;
+    top:633px;
     width:500px;
     position:absolute;
 
@@ -238,7 +243,7 @@ li a{
 
 
 #zoom{
-	top: 130px;
+	top: 85px;
 	z-index:150;
 	left: 93%;
     position:absolute;
