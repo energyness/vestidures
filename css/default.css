@@ -1,0 +1,311 @@
+    /*==================================================================
+    CSS per defecte
+    ====================================================================*/
+    /*we set the font style we want*/
+  @font-face
+    {
+    font-family: "Fjalla";
+    src: url('../fonts/FjallaOne-Regular.otf');
+        /*,url('Sansation_Light.eot'); /* IE9 */
+    }
+
+
+body {
+        padding-top: 100px; /* 60px to make the container go all the way to the bottom of the topbar */
+        background-color: black;
+
+      }
+
+li a{
+	color: white;
+
+}
+
+/*==================================================================
+    CSS classes Bootstrap
+====================================================================*/
+
+
+.navbar{
+	 background-color: transparent;
+	 padding-top:10px;
+}
+
+.navbar .navbar-nav > li > a {
+	font-family: "Arial Narrow";
+	font-size:12pt;
+
+}
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right:10px;
+  line-height: 10px;
+}
+
+.row {
+	background-color: transparent;
+}
+
+.col-md-4{
+    
+    background-color: transparent;
+}
+
+.container{
+	background-color: blue;
+
+}
+
+
+
+
+
+/*==================================================================
+    CSS personalitzat
+====================================================================*/
+.navbar .navbar-nav > li > .pages:hover {
+	background-color: #ffff47;
+	color:black;
+}
+
+.active2 { /*Manté el color de la pagina on ens trobem*/
+	 background-color: #ffff47;
+	 color:black;
+}
+
+/*.title{ /* Característiques del títol a index.html
+	font-family: "Fjalla";
+	text-align: center;
+	font-size: 120px;
+	color:white;
+
+}*/
+
+#grid{
+	margin-top: 150px;
+
+
+}
+
+/*Centrar el GRID*/
+.left{
+	z-index: 2;  /*Ens permet solapar els divs*/
+	margin-right: -90px;
+	margin-left: 90px;
+}
+
+.center{
+	z-index:1;
+
+}
+
+.right{
+	z-index:2;
+	margin-left: -90px;
+	
+
+}
+
+.ptitle{ 
+	font-family: "Fjalla";
+	text-align: center;
+	font-size: 120px;
+	color:white;
+
+	z-index:100;
+    position:absolute;
+
+    /*Ens centra el text quan té posició abasoluta*/
+     left:0;
+     right: 0;   
+
+}
+
+
+.lang{
+	 color:#808080	;
+	 font-size: 12px;
+	 padding: 5px;
+}
+
+.navbar .nav > li > .lang{
+	padding-right: 3px;
+
+	
+}
+
+.navbar .navbar-nav > li > .lang:hover {
+	background-color: transparent;
+	color:white;
+}
+
+.image{
+	width:50%;
+    
+
+   position:absolute;
+   top: 5%;
+   left: 25%;
+}
+
+.image2{
+   position:absolute;
+   top: 15%;
+    margin: 0 auto;
+    left:0;
+    right:0;
+}
+
+
+.image_h{
+   padding-top: 20px;
+   margin-left: 31%;
+}
+
+.texto{
+	font-family: "Arial";
+	text-align:center; 
+    color:white;
+    font-size: 17pt;
+
+    margin-left: 25%;
+  
+    margin-top:46%;
+    width:52%;
+
+
+}
+
+.texto2{
+	background-color: red;
+	font-family: "Arial";
+	text-align:center; 
+    color:white;
+    font-size: 14pt;
+    
+    margin: 0 auto;
+    left:0;
+    right:0;
+  
+    margin-top:45%;
+    width:500px;
+    position:absolute;
+
+}
+
+.h1_v{ 
+	font-family: "Arial";
+	text-align: center;
+	color:white;
+
+	margin-left: 24%;
+	 top:65%;
+	 width:42%;
+	
+    position:absolute;
+
+    /*Ens centra el text quan té posició abasoluta*/
+    
+
+}
+
+#think{
+	font-family: "Arial";
+	text-align: center;
+	color:white;
+	  font-size: 20pt;
+	  letter-spacing:4px;
+
+	  padding-top: 15px;
+	   margin-left: 2%;
+
+}
+
+#tumblr{
+	font-family: "Arial";
+	text-align: center;
+	color:white;
+	font-size: 17pt;
+
+	 padding-top: 15px;
+	 margin-left: 2%;
+	  text-decoration:underline;
+
+}
+
+
+#zoom{
+	top: 130px;
+	z-index:150;
+	left: 93%;
+    position:absolute;
+}
+
+#zoom img{
+	width: 40px;
+	
+
+	display: block;
+}
+
+#share-buttons{
+	top:130px;
+	position: absolute; 
+	left:0;
+	width: 100px; 
+	z-index:150;
+}
+
+#share-buttons img {
+	padding: 1px;
+	width: 60px;
+	border: 0;
+	box-shadow: 0;
+	display: block;
+
+}
+#share-buttons_h{
+	
+	left: 0;
+	right:0; 
+	text-align:center; 
+
+}
+
+#share-buttons_h a{
+	width: 35px;
+	padding: 25px;
+
+}
+
+#share-buttons_h2{
+	
+	padding-top: 40px;
+	left: 0;
+	right:0; 
+	text-align:center;
+ 
+}
+
+#share-buttons_h2 a{
+	width: 35px;
+	padding: 25px;
+}
+
+.text_social{
+	color:white;
+	font-size: 12pt;
+
+}
+
+.text_social:hover{
+	color:white;
+	text-decoration:underline;
+
+}
+
+
+
