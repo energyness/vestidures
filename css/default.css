@@ -9,6 +9,19 @@
         /*,url('Sansation_Light.eot'); /* IE9 */
     }
 
+      @font-face
+    {
+    font-family: "Arial2";
+    src: url('../fonts/Arial.ttf');
+        /*,url('Sansation_Light.eot'); /* IE9 */
+    }
+
+      @font-face
+    {
+    font-family: "Arial Narrow2";
+    src: url('../fonts/Arial-Narrow.ttf');
+        /*,url('Sansation_Light.eot'); /* IE9 */
+    }
 
 body {
         padding-top: 100px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -37,7 +50,7 @@ hr{
 }
 
 .navbar .navbar-nav > li > a {
-	font-family: "Arial Narrow";
+	font-family: "Arial Narrow2";
 	font-size:12pt;
 
 }
@@ -176,7 +189,7 @@ hr{
 }
 
 .texto{
-	font-family: "Arial";
+	font-family: "Arial2";
 	text-align:center; 
     color:white;
     font-size: 17pt;
@@ -191,10 +204,12 @@ hr{
 
 .texto2{
 	background-color: transparent;
-	font-family: "Arial";
+	font-family: "Arial2";
 	text-align:center; 
     color:white;
-    font-size: 14pt;
+    font-size: 17pt;
+    line-height: 25pt;
+
     
     margin: 0 auto;
     left:0;
@@ -205,9 +220,12 @@ hr{
     position:absolute;
 
 }
+.texto2 p{
+	margin-bottom:10pt;
+}
 
 .h1_v{ 
-	font-family: "Arial";
+	font-family: "Arial2";
 	text-align: center;
 	color:white;
 
@@ -223,7 +241,7 @@ hr{
 }
 
 #think{
-	font-family: "Arial";
+	font-family: "Arial2";
 	text-align: center;
 	color:white;
 	  font-size: 20pt;
@@ -235,7 +253,7 @@ hr{
 }
 
 #tumblr{
-	font-family: "Arial";
+	font-family: "Arial2";
 	text-align: center;
 	color:white;
 	font-size: 17pt;
