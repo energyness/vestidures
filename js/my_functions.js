@@ -70,6 +70,6 @@ $(function() {
 var buttons = document.getElementById('share-buttons_h')
 var text = document.getElementsByClassName('texto2')[0]
 
-buttons.style.marginTop =  text.offsetHeight + 610 + 'px';
+buttons.style.marginTop =  text.offsetHeight + 570 + 'px';
 
 
