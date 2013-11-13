@@ -23,6 +23,13 @@
         /*,url('Sansation_Light.eot'); /* IE9 */
     }
 
+    @font-face
+    {
+    font-family: "Times";
+    src: url('../fonts/times.ttf');
+        /*,url('Sansation_Light.eot'); /* IE9 */
+    }
+
 body {
         padding-top: 100px; /* 60px to make the container go all the way to the bottom of the topbar */
         background-color: black;
@@ -207,8 +214,8 @@ hr{
 	font-family: "Arial2";
 	text-align:center; 
     color:white;
-    font-size: 17pt;
-    line-height: 25pt;
+    font-size: 14pt;
+    line-height: 20pt;
 
     
     margin: 0 auto;
@@ -222,6 +229,34 @@ hr{
 }
 .texto2 p{
 	margin-bottom:10pt;
+}
+
+.about{
+	background-color: transparent;
+	font-family: "Times";
+	text-align:left; 
+    color:white;
+    font-size: 16pt;
+    line-height: 28pt;
+
+    
+    margin: 0 auto;
+    left:0;
+    right:0;
+
+    width:450px;
+    position:absolute;
+    margin-top:30px;
+}
+
+.about p{
+	margin-bottom:15pt;
+}
+
+.about a,
+.about a:hover{
+	text-decoration: underline;
+	color:white;
 }
 
 .h1_v{ 
@@ -304,8 +339,8 @@ hr{
 }
 
 #share-buttons_h a{
-	width: 35px;
-	padding: 25px;
+
+	padding: 35px;
 
 }
 
