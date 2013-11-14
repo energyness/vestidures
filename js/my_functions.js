@@ -64,7 +64,10 @@ $(function() {
     $("#share-buttons").floatingFixed({ padding: 130 });
 
   });
+$(function() {        
+    $(".social_act").floatingFixed({ padding: 130 });
 
+  });
 
 //Permetre que els buttons horitzontals es possisionin de la mateixa manera respecte el discurs
 var buttons = document.getElementById('share-buttons_h')
