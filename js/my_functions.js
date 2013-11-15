@@ -75,12 +75,31 @@ var text = document.getElementsByClassName('texto2')[0]
 
 buttons.style.marginTop =  text.offsetHeight + 570 + 'px';
 
-$(function() {          
-    $("img.lazy").lazyload({
-        event : "sporty"
-    });
-});
- 
-$(window).bind("load", function() { 
-    var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 5000);
-}); 
+  // your countdown in milliseconds
+
+//Thus function avoid wrong image position when loading the page
+var countdown = 5;
+setTimeout(function() {
+    
+    var img = $('<img id="note">'); //Equivalent: $(document.createElement('img'))
+    img.attr('src', './images/others/icona_music.png');
+    img.appendTo('.navbar-right');
+
+    $('.music').append('Play soundtrack!');   
+
+}, countdown);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
