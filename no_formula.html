@@ -59,6 +59,12 @@
         </div>
       <div class="collapse navbar-collapse navbar-ex2-collapse">
         <ul class="nav navbar-nav navbar-right">
+                <li>  </li>
+
+                <li> <a class="music lang" href="JavaScript:void()" onClick="window.open('./music.html','nohihaformulaplayer','width=397,height=50,toolbar=no,status=no,resizable=yes,menubar=no,location=no,directories=no,scrollbars=no'); return false;"> 
+                <img class="note" src="./images/others/icona_music.png">
+
+                 Play soundtrack!</a></li>
                 <li><a class="lang" href="./index.html">CAT</a></li>
                 <li><a class="lang" href="./es/index.html">ES</a></li>
                 <li><a class="lang" href="./en/index.html">EN</a></li>
@@ -67,18 +73,22 @@
     </nav>
 
     <div class="container">
+
     
             <div id="zoom">
              <a href="JavaScript:void()"><img  src="./images/zoom/zoomin.png" onmousedown="mousedownfunc('1.01')" onmouseup="mouseupfunc('1.01')"></a>
 
-            <img src="./images/zoom/zoominzoomout.png">    
+            <img class ="lazy" src="./images/zoom/zoominzoomout.png">    
 
             <a href="JavaScript:void()"><img  src="./images/zoom/zoomout.png" onmousedown="mousedownfunc('0.99')" onmouseup="mouseupfunc('0.99')"> </a>
               </div>   
 
             <img  id = "pic" src="./images/mandales/NO_FORMULA.jpg" class=" image" alt=""> <!--image responsive fa que es deformi la imatge quan la amplies més enllà dels limits de la pantalla -->
            
-
+               <!-- <object type="application/x-shockwave-flash" width="400" height="170"
+                    data="xspf_player_slim.swf?playlist_url=./songs/playlist.txt&autoplay=1&autoload=1&repeat_playlist=1&autoresume=1">
+                    <param name="movie&repeat_playlist=1" value="xspf_player_slim.swf?playlist_url=./songs/playlist.txt&autoplay=1&autoload=1&autoresume=1" />
+                </object> -->
             <p class="ptitle"> NO HI HA FÓRMULA </p>
 
              <div  class="texto2">
@@ -208,6 +218,8 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/my_functions.js"></script>
      <script src="./js/jquery.floatingFixed.js"></script>
+     <script src="./js/jquery.lazyload.min.js"></script>
+     
 
      <!-- Inserta esta etiqueta después de la última etiqueta de Botón +1. -->
     <script type="text/javascript">

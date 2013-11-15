@@ -3,28 +3,28 @@
   <title>NO FÓRMULA Soundtrack!</title>
   <trackList>
     <track>
-      <location>./songs/luciernagas.mp3</location>
+      <location>./luciernagas.mp3</location>
       
-      <title>Boreals - Luciérnagas</title>
+      <title>Boreals - Luciernagas</title>
     </track>
     <track>
-      <location>./songs/sun.mp3</location>
+      <location>./sun.mp3</location>
       <title>Caribou - Sun</title>
     </track>
     <track>
-      <location>./songs/foraneo.mp3</location>
+      <location>./foraneo.mp3</location>
       <title>Gotan Project - El Capitalismo Foraneo</title>
     </track>
     <track>
-      <location>./songs/encore.mp3</location>
+      <location>./encore.mp3</location>
       <title>Nicolas Jaar - Encore</title>
     </track>
     <track>
-      <location>./songs/wildcat.mp3</location>
+      <location>./wildcat.mp3</location>
       <title>Ratatat - Wildcat</title>
     </track>
     <track>
-      <location>./songs/forever.mp3</location>
+      <location>./forever.mp3</location>
       <title>Röyskopp Forever</title>
     </track>
   </trackList>

@@ -75,4 +75,12 @@ var text = document.getElementsByClassName('texto2')[0]
 
 buttons.style.marginTop =  text.offsetHeight + 570 + 'px';
 
-
+$(function() {          
+    $("img.lazy").lazyload({
+        event : "sporty"
+    });
+});
+ 
+$(window).bind("load", function() { 
+    var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 5000);
+}); 
