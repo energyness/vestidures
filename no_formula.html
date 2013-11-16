@@ -221,11 +221,15 @@
 
      <!-- Inserta esta etiqueta después de la última etiqueta de Botón +1. -->
     <script type="text/javascript">
-    setTimeout(function() {
-    // hide your loading image after "countdown" milliseconds
-    $("#note").hide();
 
-}, 0);
+    if($('.idc-signup').length){
+        $('.idc-new_subscribe').css('margin-top','-845px');        
+
+    }
+    else{
+        $('.idc-new_subscribe').css('margin-top','-845px'); 
+    }
+    
       window.___gcfg = {lang: 'es'};
 
       (function() {
