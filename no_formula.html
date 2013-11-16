@@ -60,7 +60,7 @@
       <div class="collapse navbar-collapse navbar-ex2-collapse">
         <ul class="nav navbar-nav navbar-right">
 
-                <li> <a class="music lang" href="JavaScript:void()" onClick="window.open('./music.html','nohihaformulaplayer','width=397,height=50,toolbar=no,status=no,resizable=yes,menubar=no,location=no,directories=no,scrollbars=no'); return false;"> 
+                <li> <a class="lang music" style="font-size:14px;font-family:"Arial Narrow2";" href="JavaScript:void()" onClick="window.open('./music.html','nohihaformulaplayer','width=397,height=150,toolbar=no,status=no,resizable=0,menubar=no,location=no,directories=no,scrollbars=no'); return false;"> 
 
                  </a></li>
                 <li><a class="lang" href="./index.html">CAT</a></li>
@@ -158,18 +158,23 @@
              
             </div>
 
+
+
             <div id="share-buttons_h">
              
             <!-- Facebook -->
-            <a class="text_social" href="http://www.facebook.com/sharer.php?u=http://faboratory.org/" target="_blank">Like</a>
+            <a class="text_social" onmouseover="this.src='./images/buttons/like_hover.png';document.getElementById('fbuttH').style.display = 'block';" 
+            onmouseout="this.src='./images/buttons/LIKEgeneral.png';document.getElementById('fbuttH').style.display = 'none';">Like</a>
 
              
             <!-- Google+ -->
-            <a class="text_social" href="https://plus.google.com/share?url=http://www.simplesharebuttons.com" target="_blank">+1</a>
+            <a class="text_social" onmouseover="this.src='./images/buttons/+1_hover.png';document.getElementById('gbuttH').style.display = 'block';" 
+            onmouseout="this.src='./images/buttons/+1.png';document.getElementById('gbuttH').style.display = 'none';">+1</a>
              
              
             <!-- Pinterest -->
-            <a class="text_social" href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">Pin</a>
+            <a class="text_social" onmouseover="this.src='./images/buttons/pin_hover.png';document.getElementById('pbuttH').style.display = 'block';" 
+            onmouseout="this.src='./images/buttons/PIN.png';document.getElementById('pbuttH').style.display = 'none';">Pin</a>
              
             <!-- Email -->
             <a class="text_social" href="mailto:?Subject=Simple Share Buttons&Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://www.simplesharebuttons.com">Mail</a>
@@ -177,6 +182,37 @@
             <!-- PDF-->
             <a class="text_social" href="./pdf/NO HI HA FÓRMULA 2013-nohihaformula.pdf" target="_blank">PDF</a>
              
+            </div>
+
+             <div class = "social_actH"> 
+                <div id="fbuttH" class="fbH fb-like" data-href="http://energyness.github.io/vestidures" data-width="40" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"
+                onmouseover="document.getElementById('fbuttH').style.display = 'block';"
+                onmouseout="document.getElementById('fbuttH').style.display = 'none';"></div>
+
+                <!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
+           
+                <div id="gbuttH" class="google-buttonH"
+                    onmouseover="document.getElementById('gbuttH').style.display = 'block';"
+                    onmouseout="document.getElementById('gbuttH').style.display = 'none';">
+                    <div class="g-plusone" data-annotation="none" data-href="http://energyness.github.io/vestidures" 
+                    ></div>
+                </div>
+ 
+            
+
+
+                <div id ="pbuttH" class="pinH"
+                onmouseover="document.getElementById('pbuttH').style.display = 'block';"
+                onmouseout="document.getElementById('pbuttH').style.display = 'none';">
+                    <a href="http://www.pinterest.com/pin/create/button/
+                    ?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F
+                    &media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg
+                    &description=Next%20stop%3A%20Pinterest"
+                    data-pin-do="buttonPin"
+                    data-pin-config="above">
+                    <img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" />
+                    </a>
+                </div>
             </div>
 
             <hr>
@@ -222,14 +258,6 @@
      <!-- Inserta esta etiqueta después de la última etiqueta de Botón +1. -->
     <script type="text/javascript">
 
-    if($('.idc-signup').length){
-        $('.idc-new_subscribe').css('margin-top','-845px');        
-
-    }
-    else{
-        $('.idc-new_subscribe').css('margin-top','-845px'); 
-    }
-    
       window.___gcfg = {lang: 'es'};
 
       (function() {
