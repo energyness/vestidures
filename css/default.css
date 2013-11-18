@@ -324,7 +324,7 @@ hr{
 
 
 #zoom{
-	top: 85px;
+	top: 80px;
 	z-index:150;
 	left: 93%;
     position:absolute;
@@ -526,13 +526,13 @@ hr{
 #minus {
 
 	position:absolute;
-	margin-top: 165px;
+	margin-top: 175px;
 	margin-left: 1px;
 }
 
 #slider-vertical{  
 	  top: 125px;
-	  z-index:150;
+	  z-index:160;
 	  left: 93%;
       margin-left: 3px;
       width: 100px;  
