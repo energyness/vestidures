@@ -42,6 +42,7 @@ li a{
 }
 
 hr{
+	margin-top: 40px;
 	width:450px;
 	border-top: 1px solid #808080;
 }
@@ -105,7 +106,7 @@ hr{
 
 #footer a{
 	text-decoration: none;
-	color:#808080;
+	color:#666666;
 }
 
 
@@ -174,7 +175,7 @@ hr{
 
 
 .lang{
-	 color:#808080	;
+	 color:#666666	;
 	 font-size: 12px;
 	 padding: 5px;
 }
@@ -235,6 +236,7 @@ hr{
 	font-family: "Arial2";
 	text-align:center; 
     color:white;
+    font-weight: 800;
     font-size: 14pt;
     line-height: 20pt;
 
@@ -331,7 +333,7 @@ hr{
 #zoom img{
 	width: 40px;
 	
-
+    cursor: pointer;
 	display: block;
 }
 
@@ -398,7 +400,6 @@ hr{
 
 .social_actH{
 	background-color: transparent;
-	z-index: 152;
 	margin:0 auto;
 	left:0;
 	right:0;
@@ -406,45 +407,49 @@ hr{
 }
 
 .social_actH div{
+	background-color: transparent;
+	height: 30px;
 	padding: 1px;
 	display: none;
+	position: absolute;
+	z-index: 152;
 
 }
 
 .social_actH .google-buttonH{
-	
-	margin-top: 10px;
-	margin-left: 490px;
+	width:43px;
+	padding-top: 8px;
+	margin-left: 505px;
 
 }
 
+
 .social_actH .fbH{
-	margin-top: 10px;
-	margin-left: 420px;
+	padding-top: 10px;
+	margin-left: 450px;
 		
 
 }
 
 .social_actH .pinH{
-	margin-top: 10px;
-	margin-left: 543px;	
+	padding-top: 10px;
+	margin-left: 548px;	
 
 	
 }
 
 #share-buttons_h{
-	
+	margin: 0 auto;
 	left: 0;
 	right:0; 
-	text-align:center; 
+	margin-left:500px;
 
 }
 
-#share-buttons_h a{
-
-	padding: 15px;
-
+#share-buttons_h .padd{
+  margin-left:-4px;
 }
+
 
 #share-buttons_h2{
 	
@@ -460,31 +465,20 @@ hr{
 	padding: 25px;
 }
 
-.text_social{
-	color:white;
-	font-size: 12pt;
-
-}
-
-.text_social:hover,
-.text_social:focus{
-	color:white;
-	text-decoration:underline;
-
-}
-
 .myhr{
+	
 	border: 0; 
 	width:100%;
 	height: 1.5px; 
 	text-align: center; 
 	background: rgb(0,0,0);
-	background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(68,68,68,1) 40%, rgba(96,96,96,1) 50%, rgba(68,68,68,1) 60%, rgba(0,0,0,1) 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(40%,rgba(68,68,68,1)), color-stop(50%,rgba(96,96,96,1)), color-stop(60%,rgba(68,68,68,1)), color-stop(100%,rgba(0,0,0,1)));
-	background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(68,68,68,1) 40%,rgba(96,96,96,1) 50%,rgba(68,68,68,1) 60%,rgba(0,0,0,1) 100%);
-	background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(68,68,68,1) 40%,rgba(96,96,96,1) 50%,rgba(68,68,68,1) 60%,rgba(0,0,0,1) 100%);
-	background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(68,68,68,1) 40%,rgba(96,96,96,1) 50%,rgba(68,68,68,1) 60%,rgba(0,0,0,1) 100%);
-	background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(68,68,68,1) 40%,rgba(96,96,96,1) 50%,rgba(68,68,68,1) 60%,rgba(0,0,0,1) 100%);
+	background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(51,51,51,1) 40%, rgba(96,96,96,1) 50%, rgba(51,51,51,1) 60%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(40%,rgba(51,51,51,1)), color-stop(50%,rgba(96,96,96,1)), color-stop(60%,rgba(51,51,51,1)), color-stop(100%,rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(51,51,51,1) 40%,rgba(96,96,96,1) 50%,rgba(51,51,51,1) 60%,rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(51,51,51,1) 40%,rgba(96,96,96,1) 50%,rgba(51,51,51,1) 60%,rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(51,51,51,1) 40%,rgba(96,96,96,1) 50%,rgba(51,51,51,1) 60%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(51,51,51,1) 40%,rgba(96,96,96,1) 50%,rgba(51,51,51,1) 60%,rgba(0,0,0,1) 100%);
+
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
 }
 
@@ -526,5 +520,48 @@ hr{
 	font-size: 12pt;
 	font-family:"Arial2";
 }
+
+
+/* SLIDER */
+#minus {
+
+	position:absolute;
+	margin-top: 165px;
+	margin-left: 1px;
+}
+
+#slider-vertical{  
+	  top: 125px;
+	  z-index:150;
+	  left: 93%;
+      margin-left: 3px;
+      width: 100px;  
+      position: absolute;  
+      height: 175px;    
+      background: url('../images/zoom/zoominzoomout.png') no-repeat;  
+      
+  } 
+
+  .ui-slider-vertical .ui-slider-handle {  
+      position: absolute;  
+      z-index: 2;  
+      width: 25px;  
+      height: 25px;  
+      cursor: pointer;  
+      background: url('../images/zoom/zoom_button_corrediis.png') no-repeat 50% 50%;  
+      outline: none;   
+      margin-left: 5px; 
+      margin-bottom: -11px; 
+  } 
+
+
+.ui-slider-range {  
+  
+    position: absolute;  
+    border: 0;  
+    top: 0;  
+    height: 100%;  
+    
+} 
 
 
