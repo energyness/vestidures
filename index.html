@@ -23,6 +23,24 @@
   </head>
 
   <body>
+  <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=127484700755558";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script type="text/javascript">
+        (function(d){
+        var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
+        p.type = 'text/javascript';
+        p.async = true;
+        p.src = '//assets.pinterest.com/js/pinit.js';
+        f.parentNode.insertBefore(p, f);
+        }(document));
+    </script>
 
 <nav class="navbar navbar-fixed-top" role="navigation">
 
@@ -36,12 +54,14 @@
             <li><a class= "pages" href="./fashionism.html">FASTSHIONISM</a></li>
             <li><a class= "pages" href="./poca_vida.html">POCA VIDA</a></li>
             <li><a class= "pages" href="./about.html">ABOUT</a></li>
-            <li><a class= " pages" href="http://vestidures.blogspot.com.es/p/blog-page.html">VESTIDURES</a></li>
+            <li><a class= " pages" href="http://vestidures.blogspot.com.es/p/blog-page.html" target="_blank">VESTIDURES</a></li>
     
     </ul>
     </div>
   <div class="collapse navbar-collapse navbar-ex2-collapse">
     <ul class="nav navbar-nav navbar-right">
+            <li> <a class="lang music" style="font-size:14px;font-family:'Arial Narrow2';" href="JavaScript:void()" onClick="window.open('./music.html','nohihaformulaplayer','width=397,height=150,toolbar=no,status=no,resizable=0,menubar=no,location=no,directories=no,scrollbars=no'); return false;"> 
+
             <li><a class="lang" href="./index.html">CAT</a></li>
             <li><a class="lang" href="./es/index.html">ES</a></li>
             <li><a class="lang" href="./en/index.html">EN</a></li>
@@ -56,25 +76,53 @@
                     <param name="movie&repeat_playlist=1" value="xspf_player_slim.swf?playlist_url=./songs/playlist.txt&autoplay=1&autoload=1&autoresume=1" />
             </object> -->
 
-          <div id="share-buttons">
-            <!-- Facebook -->
-              <a href="http://www.facebook.com/sharer.php?u=http://faboratory.org/" target="_blank"><img src="./images/buttons/LIKEgeneral.png" onmouseover="this.src='./images/buttons/like_hover.png'" 
-              onmouseout="this.src='./images/buttons/LIKEgeneral.png'" onclick ="this.src='./images/buttons/like_click.png'" alt="Facebook" ></a>
+<!-- I got these buttons from simplesharebuttons.com -->
+            <div class = "social_act"> 
+                <div id="fbutt" class="fb fb-like" data-href="http://energyness.github.io/vestidures" data-width="40" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"
+                onmouseover="document.getElementById('fbutt').style.display = 'block';"
+                onmouseout="document.getElementById('fbutt').style.display = 'none';"></div>
 
-               
-              <!-- Google+ -->
-              <a href="https://plus.google.com/share?url=http://www.simplesharebuttons.com" target="_blank"><img src="./images/buttons/+1.png" onmouseover="this.src='./images/buttons/+1_hover.png'" 
-              onmouseout="this.src='./images/buttons/+1.png'" onclick ="this.src='./images/buttons/+1_click.png'"alt="Google" ></a>
-               
-               
-              <!-- Pinterest -->
-              <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="./images/buttons/PIN.png" onmouseover="this.src='./images/buttons/pin_hover.png'" 
-              onmouseout="this.src='./images/buttons/PIN.png'" onclick ="this.src='./images/buttons/pin_click.png'"alt="Pinterest" ></a>
-               
-              <!-- Email -->
-              <a href="mailto:?Subject=Simple Share Buttons&Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://www.simplesharebuttons.com"><img src="./images/buttons/MAILgeneral.png" onmouseover="this.src='./images/buttons/mail_hover.png'" 
-              onmouseout="this.src='./images/buttons/MAILgeneral.png'" onclick ="this.src='./images/buttons/mail_click.png'" alt="Email" ></a>
-               
+                <!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
+           
+                <div id="gbutt" class="google-button"
+                    onmouseover="document.getElementById('gbutt').style.display = 'block';"
+                    onmouseout="document.getElementById('gbutt').style.display = 'none';">
+                    <div class="g-plusone" data-annotation="bubble" data-size="medium" data-href="http://energyness.github.io/vestidures" 
+                    ></div>
+                </div>
+ 
+            
+
+
+                <div id ="pbutt" class="pin"
+                onmouseover="document.getElementById('pbutt').style.display = 'block';"
+                onmouseout="document.getElementById('pbutt').style.display = 'none';">
+                    <a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fenergyness.github.io%2Fvestidures%2F&media=http%3A%2F%2Fenergyness.github.io%2Fvestidures%2Fimages%2Fmandales%2F90-60-90.jpg&description=Vestidures%20is%20on%20fire" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>
+                </div>
+            </div>
+
+
+
+             <div id="share-buttons">
+             
+            <!-- Facebook -->
+            <img src="./images/buttons/LIKEgeneral.png" onmouseover="this.src='./images/buttons/like_hover.png';document.getElementById('fbutt').style.display = 'block';" 
+            onmouseout="this.src='./images/buttons/LIKEgeneral.png';document.getElementById('fbutt').style.display = 'none';" onclick ="this.src='./images/buttons/like_click.png'" alt="Facebook" >
+
+             
+            <!-- Google+ -->
+            <img src="./images/buttons/+1.png" onmouseover="this.src='./images/buttons/+1_hover.png';document.getElementById('gbutt').style.display = 'block';" 
+            onmouseout="this.src='./images/buttons/+1.png';document.getElementById('gbutt').style.display = 'none';" onclick ="this.src='./images/buttons/+1_click.png'"alt="Google" >
+             
+             
+            <!-- Pinterest -->
+            <img src="./images/buttons/PIN.png" onmouseover="this.src='./images/buttons/pin_hover.png';document.getElementById('pbutt').style.display = 'block';" 
+            onmouseout="this.src='./images/buttons/PIN.png';document.getElementById('pbutt').style.display = 'none';" onclick ="this.src='./images/buttons/pin_click.png'"alt="Pinterest" >
+             
+            <!-- Email -->
+           <a href="mailto:intarradellas@gmail.com"><img src="./images/buttons/MAILgeneral.png" onmouseover="this.src='./images/buttons/mail_hover.png'" 
+            onmouseout="this.src='./images/buttons/MAILgeneral.png'" onclick ="this.src='./images/buttons/mail_click.png'" alt="Email" > </a>
+             
             </div>
          
           <p id="m_title" class="ptitle"> NO HI HA FÓRMULA </p>
@@ -119,30 +167,62 @@
           </div>
         </div>
 
+        <div class="texto_intro">
+        <p style="font-size: 17pt;">NO HI HA FÓRMULA és un qüestionament 360º de la forma en què la indústria de la moda junt amb els mass media ens conviden a viure el tema de la roba a la nostra societat.</p>
+
+        </div>
 
 
-            <div id="share-buttons_h2">
+
+            <div class="share-buttons_h">
              
             <!-- Facebook -->
-            <a class="text_social" href="http://www.facebook.com/sharer.php?u=http://faboratory.org/" target="_blank">Like</a>
+            <img class=" padd" src='./images/buttons/discursos/like_button.png' onmouseover="this.src='./images/buttons/discursos/like_hover.png';document.getElementById('fbuttH').style.display = 'block';" 
+            onmouseout="this.src='./images/buttons/discursos/like_button.png';document.getElementById('fbuttH').style.display = 'none';" onclick="this.src='./images/buttons/discursos/like_click.png'">
 
              
             <!-- Google+ -->
-            <a class="text_social" href="https://plus.google.com/share?url=http://www.simplesharebuttons.com" target="_blank">+1</a>
+            <img class=" padd" src='./images/buttons/discursos/+1_button.png' onmouseover="this.src='./images/buttons/discursos/+1_hover.png';document.getElementById('gbuttH').style.display = 'block';" 
+            onmouseout="this.src='./images/buttons/discursos/+1_button.png';document.getElementById('gbuttH').style.display = 'none';" onclick="this.src='./images/buttons/discursos/+1_click.png'">
              
              
             <!-- Pinterest -->
-            <a class="text_social" href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">Pin</a>
+            <img class=" padd" src='./images/buttons/discursos/pin_button.png' onmouseover="this.src='./images/buttons/discursos/pin_hover.png';document.getElementById('pbuttH').style.display = 'block';" 
+            onmouseout="this.src='./images/buttons/discursos/pin_button.png';document.getElementById('pbuttH').style.display = 'none';" onclick="this.src='./images/buttons/discursos/pin_click.png'">
              
             <!-- Email -->
-            <a class="text_social" href="mailto:?Subject=Simple Share Buttons&Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://www.simplesharebuttons.com">Mail</a>
+            <a href="mailto:intarradellas@gmail.com"><img class=" padd" src='./images/buttons/discursos/mail_button.png' onmouseover="this.src='./images/buttons/discursos/mail_hover.png'" 
+            onmouseout="this.src='./images/buttons/discursos/mail_button.png'" onclick="this.src='./images/buttons/discursos/mail_click.png'"> </a>
 
             <!-- PDF-->
-            <a class="text_social" href="mailto:?Subject=Simple Share Buttons&Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://www.simplesharebuttons.com">PDF</a>
+            <a href="./pdf/NO HI HA FÓRMULA 2013-nohihaformula.pdf" target="_blank"><img class="padd" src='./images/buttons/discursos/pdf_button.jpg'  onmouseover="this.src='./images/buttons/discursos/pdf_hover.png'" 
+            onmouseout="this.src='./images/buttons/discursos/pdf_button.jpg'" target="_blank" onclick="this.src='./images/buttons/discursos/pdf_click.png'"> </a>
              
             </div>
 
-            <hr>
+             <div class = "social_actH"> 
+                <div id="fbuttH" class="fbH fb-like" data-href="http://energyness.github.io/vestidures" data-width="40" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"
+                onmouseover="document.getElementById('fbuttH').style.display = 'block';"
+                onmouseout="document.getElementById('fbuttH').style.display = 'none';"></div>
+
+                <!-- Inserta esta etiqueta donde quieras que aparezca Botón +1. -->
+           
+                <div id="gbuttH" class="google-buttonH"
+                    onmouseover="document.getElementById('gbuttH').style.display = 'block';"
+                    onmouseout="document.getElementById('gbuttH').style.display = 'none';">
+                     <div class="g-plusone" data-annotation="bubble" data-size="medium" data-href="http://energyness.github.io/vestidures" 
+                    ></div>
+                    
+                </div>
+ 
+
+                <div id ="pbuttH" class="pinH"
+                onmouseover="document.getElementById('pbuttH').style.display = 'block';"
+                onmouseout="document.getElementById('pbuttH').style.display = 'none';">
+                    <a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fenergyness.github.io%2Fvestidures%2F&media=http%3A%2F%2Fenergyness.github.io%2Fvestidures%2Fimages%2Fmandales%2F90-60-90.jpg&description=Vestidures%20is%20on%20fire" data-pin-do="buttonPin" data-pin-config="beside"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>
+                </div>
+            </div>
+          <br><br><br>
 
             <!-- I got these buttons from simplesharebuttons.com -->
             <script>
@@ -158,6 +238,17 @@
   
       </div>
 
+    <div id="footer">
+        <hr class= "myhr">
+      <div class="container">
+        <p class="ines">&copy;&copy; Inés Tarradellas 2013</p>
+        <p >built on github by Pau Fabregat</p>
+        <p class="link_foot"> <a href="./about.html" >ABOUT</a> | <a href="./agraiments.html">AGRAÏMENTS</a> | <a href="./contacte.html">CONTACTE</a></p>
+
+      </div>
+    </div>
+
+
 
 
     <!-- Bootstrap core JavaScript
@@ -167,6 +258,20 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/my_functions.js"></script>
      <script src="./js/jquery.floatingFixed.js"></script>
+
+    <!-- Inserta esta etiqueta después de la última etiqueta de Botón +1. -->
+    <script type="text/javascript">
+
+      window.___gcfg = {lang: 'es'};
+
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+
+    <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 
   </body>
 </html>

@@ -1,4 +1,23 @@
+/*Centra butons discursos */
 
+$(function(){
+  var coW = $('.container').width();
+  var shW = coW/2 - 105;
+  $('.share-buttons_h').css('margin-left',shW);
+  $('.hh').css('margin-left',shW);
+});
+
+//Thus function avoid wrong image position when loading the page
+var countdown = 5;
+setTimeout(function() {
+    
+    var img = $('<img id="note">'); //Equivalent: $(document.createElement('img'))
+    img.attr('src', './images/others/icona_music.png');
+    img.appendTo('.navbar-right');
+
+    $('.music').append('Play soundtrack!');   
+
+}, countdown);
 
 //Funció per canvia els titols quan fas hover sobre les imatges
 function changeText(text)
@@ -19,24 +38,16 @@ $(function() {
   });
 
 //Permetre que els buttons horitzontals es possisionin de la mateixa manera respecte el discurs
-var buttons = document.getElementById('share-buttons_h')
 var text = document.getElementsByClassName('texto2')[0]
 
-buttons.style.marginTop =  text.offsetHeight + 570 + 'px';
+var n=  text.offsetHeight + 570;
+
+ $('.share-buttons_h').css('margin-top', n);
 
   // your countdown in milliseconds
 
-//Thus function avoid wrong image position when loading the page
-var countdown = 5;
-setTimeout(function() {
-    
-    var img = $('<img id="note">'); //Equivalent: $(document.createElement('img'))
-    img.attr('src', './images/others/icona_music.png');
-    img.appendTo('.navbar-right');
 
-    $('.music').append('Play soundtrack!');   
 
-}, countdown);
 
 
 /* SLIDER */
@@ -138,11 +149,6 @@ function zoom(zm) {
   
 }
 
-/*Centra butons discursos */
-
-var coW = $('.container').width();
-var shW = coW/2 - 105;
-$('#share-buttons_h').css('margin-left',shW);
 
 
 

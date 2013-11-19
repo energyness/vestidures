@@ -60,6 +60,7 @@ hr{
 .navbar .navbar-nav > li > a {
 	font-family: "Arial Narrow2";
 	font-size:12pt;
+	font-weight: 100;
 
 }
 
@@ -115,6 +116,7 @@ hr{
 /*==================================================================
     CSS personalitzat
 ====================================================================*/
+/* CSS barra navegació pagines */
 .navbar .navbar-nav > li > .pages:hover {
 	background-color: #ffff47;
 	color:black;
@@ -125,17 +127,28 @@ hr{
 	 color:black;
 }
 
-/*.title{ /* Característiques del títol a index.html
-	font-family: "Fjalla";
-	text-align: center;
-	font-size: 120px;
+/* CSS Barra navegació llengües */
+.lang{
+	 color:#666666	;
+	 font-size: 12px;
+	 padding: 5px;
+}
+
+.navbar .navbar-right{
+	padding-right: 30px;
+
+	
+}
+
+.navbar .navbar-nav > li > .lang:hover {
+	background-color: transparent;
 	color:white;
+}
 
-}*/
-
+/* CSS grid per les mandales en miniatura*/
 #grid{
 	margin-top: 150px;
-
+    margin-bottom: 35px;
 
 }
 
@@ -158,6 +171,7 @@ hr{
 
 }
 
+/* CSS Títol gran intro i mandales */
 .ptitle{ 
 	font-family: "Fjalla";
 	text-align: center;
@@ -173,24 +187,7 @@ hr{
 
 }
 
-
-.lang{
-	 color:#666666	;
-	 font-size: 12px;
-	 padding: 5px;
-}
-
-.navbar .navbar-right{
-	padding-right: 30px;
-
-	
-}
-
-.navbar .navbar-nav > li > .lang:hover {
-	background-color: transparent;
-	color:white;
-}
-
+/*CSS Imatge Mandales*/
 .image{
    
    width:600px;
@@ -203,6 +200,7 @@ hr{
 
 }
 
+/*CSS Imatge Manifest*/
 .image2{
    position:absolute;
    top: 15%;
@@ -217,27 +215,37 @@ hr{
    margin-left: 31%;
 }
 
-.texto{
-	font-family: "Arial2";
+/* CSS Textos intro i mandales*/
+.texto_intro{
+	font-family: "Times";
 	text-align:center; 
     color:white;
-    font-size: 17pt;
-
-    margin-left: 25%;
   
-    margin-top:46%;
-    width:52%;
+    width:500px;
+    font-size: 12pt;
+    line-height: 20pt;
+    font-weight: 100;
 
+    margin: 0 auto;
+    left:0;
+    right:0;
+
+    margin-bottom: 30px;
 
 }
+
+.texto_intro p{
+	margin-bottom:10pt;
+}
+
 
 .texto2{
 	background-color: transparent;
 	font-family: "Arial2";
 	text-align:center; 
     color:white;
-    font-weight: 800;
     font-size: 14pt;
+    font-weight: 100;
     line-height: 20pt;
 
     
@@ -254,27 +262,35 @@ hr{
 	margin-bottom:10pt;
 }
 
-.about{
+/*CSS about, agraiments, contacte */
+
+.about {
 	background-color: transparent;
-	font-family: "Times";
+	
 	text-align:left; 
     color:white;
-    font-size: 16pt;
-    line-height: 24pt;
-
     
     margin: 0 auto;
     left:0;
     right:0;
 
-    width:450px;
-    position:absolute;
+    width:500px;
     margin-top:30px;
 }
 
 .about p{
+	    font-size: 12pt;
+	    font-weight: 100;
+    line-height: 24pt;
+	font-family: "Arial2";
 	margin-bottom:10pt;
+	font-weight: 100;
 }
+
+ .about .mayus{
+ 		
+ 	font-size: 20pt;
+ }
 
 .about a,
 .about a:hover{
@@ -282,21 +298,14 @@ hr{
 	color:white;
 }
 
-.h1_v{ 
-	font-family: "Arial2";
-	text-align: center;
-	color:white;
-
-	margin-left: 24%;
-	 top:65%;
-	 width:42%;
-	
-    position:absolute;
-
-    /*Ens centra el text quan té posició abasoluta*/
-    
-
+.about .gr,
+.about .gr:hover{
+	text-decoration: underline;
+	color:#808080;
 }
+
+
+/*CSS Manifest */
 
 #think{
 	font-family: "Arial2";
@@ -323,20 +332,8 @@ hr{
 }
 
 
-#zoom{
-	top: 80px;
-	z-index:150;
-	left: 93%;
-    position:absolute;
-}
-
-#zoom img{
-	width: 40px;
-	
-    cursor: pointer;
-	display: block;
-}
-
+/* CSS SOCIAL BUTTONS*/
+/*VERTICALS*/
 #share-buttons{
 	top:130px;
 	position: absolute; 
@@ -398,6 +395,7 @@ hr{
 	
 }
 
+/*HORITZONTALS*/
 .social_actH{
 	background-color: transparent;
 	margin:0 auto;
@@ -438,7 +436,7 @@ hr{
 	
 }
 
-#share-buttons_h{
+.share-buttons_h{
 	margin: 0 auto;
 	left: 0;
 	right:0; 
@@ -446,7 +444,7 @@ hr{
 
 }
 
-#share-buttons_h .padd{
+.share-buttons_h .padd{
   margin-left:-4px;
 }
 
@@ -465,6 +463,7 @@ hr{
 	padding: 25px;
 }
 
+/* Footer gradient */
 .myhr{
 	
 	border: 0; 
@@ -482,9 +481,12 @@ hr{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
 }
 
+
+/* CSS Music player */
 .music{
 	outline: none;  
-	font-family: "Arial";
+	font-family: "Arial2";
+	font-weight: 100;
 	color:#ffff47;
 	font-size: 8px;
 	 padding: 5px;
@@ -512,6 +514,7 @@ hr{
 	color:white;
 	font-size: 12pt;
 	font-family:"Arial2";
+	font-weight: 100;
 }
 
 .m_text a{
@@ -519,10 +522,26 @@ hr{
 	color:#808080;
 	font-size: 12pt;
 	font-family:"Arial2";
+	font-weight: 100;
 }
 
 
-/* SLIDER */
+/* SLIDER + ZOOM*/
+
+#zoom{
+	top: 80px;
+	z-index:150;
+	left: 95%;
+    position:absolute;
+}
+
+#zoom img{
+	width: 40px;
+	
+    cursor: pointer;
+	display: block;
+}
+
 #minus {
 
 	position:absolute;
@@ -533,7 +552,7 @@ hr{
 #slider-vertical{  
 	  top: 125px;
 	  z-index:160;
-	  left: 93%;
+	  left: 95%;
       margin-left: 3px;
       width: 100px;  
       position: absolute;  
