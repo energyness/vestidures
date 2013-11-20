@@ -2,9 +2,8 @@
 
 $(function(){
   var coW = $('.container').width();
-  var shW = coW/2 - 105;
+  var shW = coW/2 - 85;
   $('.share-buttons_h').css('margin-left',shW);
-  $('.hh').css('margin-left',shW);
 });
 
 //Thus function avoid wrong image position when loading the page

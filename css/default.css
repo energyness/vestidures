@@ -58,7 +58,7 @@ hr{
 }
 
 .navbar .navbar-nav > li > a {
-	font-family: "Roboto Condensed";
+	font-family: "Arial Narrow2";
 	font-size:12pt;
 	font-weight: 100;
 
@@ -89,7 +89,7 @@ hr{
 }
 
 #footer{
-	font-family: "Roboto";
+	font-family: "Arial2";
 	font-weight: 300;
 	line-height: 8px;
 	text-align: center;
@@ -220,13 +220,12 @@ hr{
 /* CSS Textos intro i mandales*/
 .texto_intro{
 	font-family: rosario, sans-serif;
-	font-style: italic;
 	text-align:center; 
     color:white;
   
     width:650px;
     font-size: 12pt;
-    line-height: 20pt;
+    line-height: 24pt;
     font-weight: 100;
 
     margin: 0 auto;
@@ -286,7 +285,7 @@ hr{
 	font-size: 12pt;
 	font-weight: 400;
     line-height: 18pt;
-	font-family: "Roboto";
+	font-family: "Arial2";
 	margin-bottom:7pt;
 	font-weight: 100;
 }
@@ -421,21 +420,21 @@ hr{
 .social_actH .google-buttonH{
 	width:43px;
 	padding-top: 8px;
-	margin-left: 505px;
+	margin-left: 530px;
 
 }
 
 
 .social_actH .fbH{
 	padding-top: 10px;
-	margin-left: 450px;
+	margin-left: 465px;
 		
 
 }
 
 .social_actH .pinH{
 	padding-top: 10px;
-	margin-left: 548px;	
+	margin-left: 583px;	
 
 	
 }
@@ -449,7 +448,7 @@ hr{
 }
 
 .share-buttons_h .padd{
-  margin-left:-4px;
+  margin-left:-3px;
 }
 
 
@@ -489,7 +488,7 @@ hr{
 /* CSS Music player */
 .music{
 	outline: none;  
-	font-family: "Roboto";
+	font-family: "Arial2";
 	font-weight: 300;
 	color:#ffff47;
 	font-size: 8px;
@@ -517,7 +516,7 @@ hr{
 .m_text{
 	color:white;
 	font-size: 12pt;
-	font-family:"Roboto";
+	font-family:"Arial2";
 	font-weight: 400;
 }
 
@@ -525,7 +524,7 @@ hr{
 	outline: none;  
 	color:#808080;
 	font-size: 12pt;
-	font-family:"Roboto";
+	font-family:"Arial2";
 	font-weight: 400;
 }
 
