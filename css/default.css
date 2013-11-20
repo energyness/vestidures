@@ -219,14 +219,14 @@ hr{
 
 /* CSS Textos intro i mandales*/
 .texto_intro{
-	font-family: "Roboto";
+	font-family: rosario, sans-serif;
 	text-align:center; 
     color:white;
   
     width:500px;
     font-size: 12pt;
     line-height: 20pt;
-    font-weight: 300;
+    font-weight: 100;
 
     margin: 0 auto;
     left:0;
@@ -243,11 +243,11 @@ hr{
 
 .texto2{
 	background-color: transparent;
-	font-family: "Roboto";
+	font-family: "rosario", "sans-serif";
 	text-align:center; 
     color:white;
     font-size: 14pt;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 20pt;
 
     
