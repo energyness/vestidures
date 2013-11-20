@@ -44,12 +44,6 @@ var n=  text.offsetHeight + 550;
 
  $('.share-buttons_h').css('margin-top', n);
 
-  // your countdown in milliseconds
-
-
-
-
-
 /* SLIDER */
 
 $(function() {
