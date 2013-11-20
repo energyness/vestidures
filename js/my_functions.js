@@ -40,7 +40,7 @@ $(function() {
 //Permetre que els buttons horitzontals es possisionin de la mateixa manera respecte el discurs
 var text = document.getElementsByClassName('texto2')[0]
 
-var n=  text.offsetHeight + 570;
+var n=  text.offsetHeight + 550;
 
  $('.share-buttons_h').css('margin-top', n);
 
