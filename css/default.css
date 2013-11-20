@@ -220,6 +220,7 @@ hr{
 /* CSS Textos intro i mandales*/
 .texto_intro{
 	font-family: rosario, sans-serif;
+	font-style: italic;
 	text-align:center; 
     color:white;
   
@@ -244,6 +245,7 @@ hr{
 .texto2{
 	background-color: transparent;
 	font-family: rosario, sans-serif;
+	font-style: italic;
 	text-align:center; 
     color:white;
     font-size: 14pt;
