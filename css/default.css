@@ -95,8 +95,17 @@ hr{
 	text-align: center;
 	font-size: 8pt;
 	color:#666666;
-	margin-top: 15px;
-	background-color: transparent
+	
+	padding-bottom: 20px;
+
+	background: rgb(0,0,0);
+	background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(51,51,51,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(60%,rgba(0,0,0,1)), color-stop(100%,rgba(51,51,51,1)));
+	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(51,51,51,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(51,51,51,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(51,51,51,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(51,51,51,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=0 );
 }
 
 #footer .ines{
@@ -104,12 +113,16 @@ hr{
 }
 
 #footer .link_foot{
-	padding-top: 15px;
+	padding-top: 10px;
 }
 
 #footer a{
 	text-decoration: none;
 	color:#666666;
+}
+
+#footer a:hover{
+	color: white;
 }
 
 
@@ -169,8 +182,6 @@ hr{
 .right{
 	z-index:2;
 	margin-left: -90px;
-	
-
 }
 
 /* CSS Títol gran intro i mandales */
@@ -355,6 +366,8 @@ hr{
 }
 
 .social_act{
+    width: 200px;
+    height:300px;
 	top:130px;
 	position: absolute; 
 	
@@ -373,7 +386,9 @@ hr{
 }
 
 .social_act .google-button{
+
 	padding-left: 10px;
+
 	
 
 }
@@ -420,21 +435,21 @@ hr{
 .social_actH .google-buttonH{
 	width:43px;
 	padding-top: 8px;
-	margin-left: 530px;
+	margin-left: 525px;
 
 }
 
 
 .social_actH .fbH{
 	padding-top: 10px;
-	margin-left: 465px;
+	margin-left: 455px;
 		
 
 }
 
 .social_actH .pinH{
 	padding-top: 10px;
-	margin-left: 583px;	
+	margin-left: 590px;	
 
 	
 }
@@ -509,11 +524,13 @@ hr{
 
 .navbar .navbar-nav img {
 	position:absolute;
-	right: 268px;
+	right: 263px;
 	top: 17px;
 }
 
 .m_text{
+	width:400px;
+	padding: 10px;
 	color:white;
 	font-size: 12pt;
 	font-family:"Arial2";
@@ -522,7 +539,7 @@ hr{
 
 .m_text a{
 	outline: none;  
-	color:#808080;
+	color:#ffff47;
 	font-size: 12pt;
 	font-family:"Arial2";
 	font-weight: 400;
@@ -557,7 +574,7 @@ hr{
 	  z-index:160;
 	  left: 95%;
       margin-left: 3px;
-      width: 100px;  
+      width: 30px;  
       position: absolute;  
       height: 175px;    
       background: url('../images/zoom/zoominzoomout.png') no-repeat;  

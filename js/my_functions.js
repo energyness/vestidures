@@ -2,7 +2,7 @@
 
 $(function(){
   var coW = $('.container').width();
-  var shW = coW/2 - 85;
+  var shW = coW/2 - 110;
   $('.share-buttons_h').css('margin-left',shW);
 });
 
@@ -39,7 +39,7 @@ $(function() {
 //Permetre que els buttons horitzontals es possisionin de la mateixa manera respecte el discurs
 var text = document.getElementsByClassName('texto2')[0]
 
-var n=  text.offsetHeight + 550;
+var n=  text.offsetHeight + 545;
 
  $('.share-buttons_h').css('margin-top', n);
 
@@ -54,7 +54,7 @@ $(function() {
       step: 0.01,
       range: "min",
       min: 1,
-      max: 2.33333333,
+      max: 2.13,
       value: 1,
       slide: function( event, ui ) {
         zoom(ui.value);
