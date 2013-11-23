@@ -2,7 +2,7 @@
 
 $(function(){
   var coW = $('.container').width();
-  var shW = coW/2 - 110;
+  var shW = coW/2 - 105;
   $('.share-buttons_h').css('margin-left',shW);
 });
 
@@ -140,6 +140,17 @@ function zoom(zm) {
         img.style.marginTop = -(img.height/2) +300+"px";
       }
   
+}
+
+function wait(button){
+  var countdown = 40000 //40 segons;
+  setTimeout(function() {
+    $(button).css('display','none');
+       
+
+}, countdown);
+
+
 }
 
 

@@ -96,7 +96,9 @@ hr{
 	font-size: 8pt;
 	color:#666666;
 	
+	
 	padding-bottom: 20px;
+
 
 	background: rgb(0,0,0);
 	background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(51,51,51,1) 100%);
@@ -107,6 +109,7 @@ hr{
 	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(51,51,51,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=0 );
 }
+
 
 #footer .ines{
 	color:white;
@@ -186,7 +189,8 @@ hr{
 
 /* CSS Títol gran intro i mandales */
 .ptitle{ 
-	font-family: "Fjalla";
+	font-family: "Arial Narrow2";
+	font-weight:bold;
 	text-align: center;
 	font-size: 120px;
 	color:white;
@@ -230,7 +234,8 @@ hr{
 
 /* CSS Textos intro i mandales*/
 .texto_intro{
-	font-family: rosario, sans-serif;
+	font-family: "Times";
+	font-style: italic;
 	text-align:center; 
     color:white;
   
@@ -254,8 +259,7 @@ hr{
 
 .texto2{
 	background-color: transparent;
-	font-family: rosario, sans-serif;
-	font-style: italic;
+	font-family: "Arial2";
 	text-align:center; 
     color:white;
     font-size: 14pt;
@@ -352,7 +356,7 @@ hr{
 	top:130px;
 	position: absolute; 
 	left:0;
-	width: 60px; 
+
 	z-index:150;
 }
 
@@ -373,7 +377,7 @@ hr{
 	
 	background-color: transparent;
 	left:60px;
-	z-index: 152;
+
 
 
 	
@@ -386,10 +390,7 @@ hr{
 }
 
 .social_act .google-button{
-
 	padding-left: 10px;
-
-	
 
 }
 
@@ -402,13 +403,13 @@ hr{
 
 .social_act .pin{
 		
-	margin-top: 93px;
+	margin-top: 86px;
 	padding-left: 10px;
 	
 }
 
 .google-button{
-	margin-top: 50px;
+	margin-top: 47px;
 
 	
 }
@@ -449,7 +450,7 @@ hr{
 
 .social_actH .pinH{
 	padding-top: 10px;
-	margin-left: 590px;	
+	margin-left: 583px;	
 
 	
 }
@@ -458,7 +459,7 @@ hr{
 	margin: 0 auto;
 	left: 0;
 	right:0; 
-	margin-left:500px;
+	margin-left:502px;
 
 }
 
@@ -529,7 +530,6 @@ hr{
 }
 
 .m_text{
-	width:400px;
 	padding: 10px;
 	color:white;
 	font-size: 12pt;
