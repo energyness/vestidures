@@ -2,10 +2,10 @@
 var newYear = new Date(); 
 newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 7); 
 $('#countdown').countdown({until: newYear,
-layout:'{dnn}:{hnn}:{mnn}:{snn}'});
+layout:'<b>{dnn}:{hnn}:{mnn}:{snn}</b>'});
 
 $('#countdown').css({
-  'font-size': '95pt',
+  'font-size': '120pt',
   'font-family': 'Arial Narrow2',
   'text-align': 'center'
 });
