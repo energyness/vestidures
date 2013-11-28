@@ -2,12 +2,13 @@
 var newYear = new Date(); 
 newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 7); 
 $('#countdown').countdown({until: newYear,
-layout:'<b>{dnn}:{hnn}:{mnn}:{snn}</b>'});
+layout:'{dnn}:{hnn}:{mnn}:{snn}'});
 
 $('#countdown').css({
   'font-size': '120pt',
   'font-family': 'Arial Narrow2',
-  'text-align': 'center'
+  'text-align': 'center',
+  'font-weight' : '800'
 });
 
 /*Centra butons discursos */

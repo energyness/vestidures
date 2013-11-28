@@ -123,13 +123,14 @@ hr{
 ====================================================================*/
 /*Coming soon*/
 .soon{
-	font-size: 12pt;
+	font-size: 14pt;
     line-height: 18pt;
-	font-family: "Arial2";
+	font-family: "Times";
 	margin-bottom:7pt;
 	font-weight: 100;
 	color: white;
 	text-align: center;
+	margin-top: -20px;
 }
 
 .soon a,
@@ -148,6 +149,7 @@ hr{
 #countdown{
 	font-size: 65px;
 	font-family: 'Arial Narrow2';
+	font-weight: 800;
 	color: white;
 	background-color: transparent;
 	text-align: center;
