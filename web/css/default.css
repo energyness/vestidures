@@ -33,6 +33,7 @@
 body {
         padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
         background-color: black;
+        padding-bottom: 80px;
 
       }
 
@@ -54,7 +55,7 @@ hr{
 
 .navbar{
 	 background-color: transparent;
-	 padding-top:10px;
+	 padding-top:20px;
 }
 
 .navbar .navbar-nav > li > a {
@@ -158,6 +159,12 @@ hr{
 
 
 /* CSS barra navegació pagines */
+.logo_V {
+	padding: 5px 5px;
+	margin-top: -12px;
+	margin-left: -8px;
+}
+
 .navbar .navbar-nav > li > .pages:hover {
 	background-color: #ffff47;
 	color:black;
@@ -166,6 +173,16 @@ hr{
 .active2 { /*Manté el color de la pagina on ens trobem*/
 	 background-color: #ffff47;
 	 color:black;
+}
+
+.pages2{
+	 color:white;
+	 opacity: 0.5;
+}
+
+.navbar .navbar-nav > li > .pages2:hover {
+	background-color: transparent;
+	color:white;
 }
 
 /* CSS Barra navegació llengües */
@@ -186,6 +203,17 @@ hr{
 	color:white;
 }
 
+.lang2{
+	 color:white	;
+	 font-size: 12px;
+	 padding: 5px;
+	 opacity: 0.5;
+}
+
+.navbar .navbar-nav > li > .lang2:hover {
+	background-color: transparent;
+	color:white;
+}
 /* CSS grid per les mandales en miniatura*/
 #grid{
 	margin-top: 150px;

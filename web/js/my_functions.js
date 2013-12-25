@@ -1,16 +1,3 @@
-/* Coming soon countdown*/
-var newYear = new Date(); 
-newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 7); 
-$('#countdown').countdown({until: newYear,
-layout:'{dnn}:{hnn}:{mnn}:{snn}'});
-
-$('#countdown').css({
-  'font-size': '120pt',
-  'font-family': 'Arial Narrow2',
-  'text-align': 'center',
-  'font-weight' : '800'
-});
-
 /*Centra butons discursos */
 $(function(){
   var coW = $('.container').width();
