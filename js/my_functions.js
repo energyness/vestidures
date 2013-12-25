@@ -26,7 +26,7 @@ $(function() {
 
   });
 $(function() {        
-    $(".social_act").floatingFixed({ padding: 130 });
+    $("#wrapdown").floatingFixed({ padding: 80 });
 
   });
 
