@@ -177,7 +177,7 @@ hr{
 
 .pages2{
 	 color:white;
-	 opacity: 0.5;
+	 opacity: 0.35;
 }
 
 .navbar .navbar-nav > li > .pages2:hover {
@@ -207,7 +207,7 @@ hr{
 	 color:white	;
 	 font-size: 12px;
 	 padding: 5px;
-	 opacity: 0.5;
+	 opacity: 0.35;
 }
 
 .navbar .navbar-nav > li > .lang2:hover {
