@@ -25,10 +25,7 @@ $(function() {
     $("#share-buttons").floatingFixed({ padding: 130 });
 
   });
-$(function() {        
-    $("#wrapdown").floatingFixed({ padding: 80 });
 
-  });
 
 
 
