@@ -1,0 +1,152 @@
+    /*==================================================================
+    CSS per defecte
+    ====================================================================*/
+
+.mtext{
+	background-color: transparent;
+	font-family: "Arial2";
+	text-align:center; 
+    color:white;
+
+    font-size: 14pt;
+    font-weight: 100;
+    line-height: 20pt;
+}
+
+.item{
+  	margin: 0 auto;
+    left:0;
+    right:0;
+}
+
+.item img {
+  	margin: 0 auto;
+    left:0;
+    right:0;
+}
+
+.carousel-inner{
+	margin-top: 60px;
+}
+
+.select{
+	margin-top: 30px;
+    text-align: center;
+
+}
+
+.enter{
+	margin-top: 10px;
+}
+
+.wow{
+    text-align: right;
+    margin-top: -10px;
+
+}
+
+.wow a{
+    color:#ffff47;
+    text-decoration: none;
+}
+
+.social_phone{
+
+    text-align: center;
+    
+
+}
+
+.social_actp {
+    text-align: center;
+    display: none;
+
+
+}
+
+.social_phoneH{
+    margin-top: 20px;
+   
+}
+
+.butH{
+    z-index:-2;
+}
+
+#pbuttH{
+    text-align: center;
+
+}
+
+#fbuttH{
+    text-align: left;
+
+}
+
+.gbuttH{
+   text-align: right;
+}
+
+/*.social_actp div{
+    background-color: transparent;
+    height: 30px;
+    padding: 1px;
+    display: none;
+    z-index: 152;
+
+}*/
+
+.paddp{
+    display:none;
+}
+.navbar-default{
+    border-color: black;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    z-index: 1050;
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 20px;
+    z-index:1050;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ffff47;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle .icon-bar:hover {
+  background-color: black;
+}
+#yey a{
+    color:white;
+}
+
+#yey a:hover,
+#yey .active2{
+    color:black;
+}
+
+.imageP{
+
+}
+
+@media (max-width: 768px){
+	body {
+        padding-top: 15px; /* 60px to make the container go all the way to the bottom of the topbar */
+        background-color: black;
+        padding-bottom: 15px;
+
+      }
+    .ptitle{
+    	font-size: 45px;
+    }
+
+}
+
+

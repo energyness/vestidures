@@ -1,3 +1,16 @@
+$(window).scroll(function() { //when window is scrolled
+   social= $('.social_phone').offset().top;
+   social_g = $('.social_phoneH').offset().top;;
+     if (social > social_g){
+      $('.paddp').css('display', 'none')
+    }
+    else{
+      $('.paddp').css('display', 'inline')
+    }
+
+    });
+ 
+
 /*Centra butons discursos */
 $(function(){
   var coW = $('.container').width();
@@ -11,9 +24,12 @@ setTimeout(function() {
     
     var img = $('<img id="note">'); //Equivalent: $(document.createElement('img'))
     img.attr('src', './images/others/icona_music.png');
-    img.appendTo('.navbar-right');
+    img.attr('style', 'margin-top:10px;');
+    img.appendTo('.not');
 
-    $('.music').append('Play soundtrack!');   
+    $('.music').append('Play soundtrack!'); 
+
+    $('.paddp').css('display','inline'); 
 
 }, countdown);
 
@@ -25,7 +41,7 @@ function changeText(text)
     display.innerHTML = text;
 }
 
-//Social buttons left, padding constant per mantenir el element fixe
+//Social buttons --> padding constant per mantenir el element fixe
 $(function() {        
     $("#share-buttons").floatingFixed({ padding: 130 });
 
@@ -33,6 +49,11 @@ $(function() {
 $(function() {        
     $(".social_act").floatingFixed({ padding: 130 });
 
+  });
+$(function() { 
+
+    $(".social_phone").floatingFixed({ padding: $(window).height()-40});
+    
   });
 
 //Permetre que els buttons horitzontals es possisionin de la mateixa manera respecte el discurs
@@ -107,8 +128,8 @@ var img=document.getElementById("pic")
 W = $(window).width();
 
 $(window).resize(function(){
-        W = $(window).width(); // get new height after change
-        zoom(1);
+        W = $(window).width(); // get new width after change
+        zoom(1); 
     });
 
 //ZOOM
@@ -150,6 +171,33 @@ function wait(button){
   }, countdown);
 
 }
+
+//We select a language and the button 'Go' get the desired url for the language
+function changeLang(text)
+{
+
+    var lang = $('.go'); //Equivalent: $(document.createElement('img'))
+    lang.attr('href', text);
+
+}
+
+//Fit elements
+  w = $(window).width();
+  $('.imageP').css('width', w-60); //fit image with the modal, even resizing
+
+   ww = $('.col-xs-4').width()
+   $('.gbuttH').css('margin-left', 0); //fit gbuttH...it is a bad boooy!
+  $(window).resize(function(){
+        w = $(window).width();
+        $('.imageP').css('width', w-60);
+
+         ww = $('.col-xs-4').width()
+        $('.gbuttH').css('margin-left', 0);
+
+        $('.social_phone').css('width',w-30); //fit social buttons--> allway center!
+    });
+
+
 
 
 
