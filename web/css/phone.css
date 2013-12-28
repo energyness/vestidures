@@ -8,9 +8,9 @@
 	text-align:center; 
     color:white;
 
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 100;
-    line-height: 20pt;
+    line-height: 18pt;
 }
 
 .item{
@@ -144,7 +144,8 @@
 
       }
     .ptitle{
-    	font-size: 45px;
+    	font-size: 80px;
+        line-height:85px;
     }
 
 }
