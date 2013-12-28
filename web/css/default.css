@@ -245,6 +245,7 @@ hr{
 	text-align: center;
 	font-size: 135px;
 	color:white;
+	letter-spacing:-3pt;
 
 	z-index:100;
     position:absolute;
