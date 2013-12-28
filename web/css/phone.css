@@ -1,6 +1,17 @@
     /*==================================================================
     CSS per defecte
     ====================================================================*/
+#intext{
+    background-color: transparent;
+    font-family: "Arial2";
+    text-align:center; 
+    color:white;
+
+    font-size: 13pt;
+    font-weight: 100;
+    line-height: 18pt;
+
+}
 
 .mtext{
 	background-color: transparent;
@@ -101,10 +112,11 @@
     display:none;
 }
 .navbar-default{
-    border-color: black;
+    border-color: transparent;
     margin-bottom: 0px;
     padding-top: 0px;
     z-index: 1050;
+
 }
 
 .navbar-toggle {
@@ -157,7 +169,7 @@
     .ptitle{
     	font-size: 80px;
         line-height:85px;
-        letter-spacing:-2pt
+        letter-spacing:-2pt;
     }
 
 }

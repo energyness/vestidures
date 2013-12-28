@@ -657,4 +657,13 @@ hr{
     
 } 
 
+#disqus_thread{
+	margin-top: 60px;
+}
+@media (min-width: 600px){
+	#disqus_thread{
+		width: 550px;
+	}
+}
+
 

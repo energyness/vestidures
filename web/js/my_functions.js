@@ -1,15 +1,3 @@
-$(window).scroll(function() { //when window is scrolled
-   social= $('.social_phone').offset().top;
-   social_g = $('.social_phoneH').offset().top;;
-     if (social > social_g){
-      $('.paddp').css('display', 'none')
-    }
-    else{
-      $('.paddp').css('display', 'inline')
-    }
-
-    });
- 
 
 /*Centra butons discursos */
 $(function(){
@@ -198,7 +186,33 @@ function changeLang(text)
     });
 
 
+ if (w <=768){
+    $(window).scroll(function() { //when window is scrolled
+     social= $('.social_phone').offset().top;
+     social_g = $('.social_phoneH').offset().top;;
+       if (social > social_g){
+        $('.paddp').css('display', 'none')
+      }
+      else{
+        $('.paddp').css('display', 'inline')
+      }
 
+      });
+  }
+
+  //Funció per canvia els textos quan fas click sobre idioma seleccionat (mobile version)
+function changeTextM(text, enter)
+{
+    var display = document.getElementById('intext');
+    display.innerHTML = "";
+    display.innerHTML = text;
+
+    var display = document.getElementById('enter2');
+    display.innerHTML = "";
+    display.innerHTML = enter;
+
+
+}
 
 
 
