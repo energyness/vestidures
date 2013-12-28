@@ -243,12 +243,14 @@ hr{
 	font-family: "Fjalla";
 	font-weight:100;
 	text-align: center;
-	font-size: 120px;
+	font-size: 130px;
 	color:white;
 	letter-spacing:-3pt;
 
 	z-index:100;
     position:absolute;
+
+    margin-top:20px;
 
     /*Ens centra el text quan té posició abasoluta*/
      left:0;
