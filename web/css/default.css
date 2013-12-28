@@ -241,7 +241,7 @@ hr{
 /* CSS Títol gran intro i mandales */
 .ptitle{ 
 	font-family: "Fjalla";
-	font-weight:bold;
+	font-weight:100;
 	text-align: center;
 	font-size: 120px;
 	color:white;
