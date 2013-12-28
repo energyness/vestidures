@@ -137,6 +137,10 @@
 
 }
 
+.carousel .item {-webkit-transition: opacity 0s; -moz-transition: opacity 0s; -ms-transition: opacity 0s; -o-transition: opacity 0s; transition: opacity 0s;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
+
 @media (max-width: 768px){
 	body {
         padding-top: 15px; /* 60px to make the container go all the way to the bottom of the topbar */

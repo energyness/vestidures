@@ -33,7 +33,7 @@
 body {
         padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
         background-color: black;
-        padding-bottom: 80px;
+        padding-bottom: 10px;
 
       }
 
@@ -90,7 +90,7 @@ hr{
 }
 
 #footer{
-	font-family: "Arial2";
+	font-family: "Arial Narrow2";
 	font-weight: 300;
 	line-height: 8px;
 	text-align: center;
@@ -106,9 +106,9 @@ hr{
 	color:white;
 }
 
-#footer .link_foot{
+/*#footer .link_foot{
 	padding-top: 10px;
-}
+}*/
 
 #footer a{
 	text-decoration: none;
@@ -286,8 +286,8 @@ hr{
 
 /* CSS Textos intro i mandales*/
 .texto_intro{
-	font-family: "Times";
-	font-style: italic;
+	font-family: "Arial2";
+	/*font-style: italic;*/
 	text-align:center; 
     color:white;
   
@@ -508,6 +508,7 @@ hr{
 }
 
 .share-buttons_h{
+
 	margin: 0 auto;
 	left: 0;
 	right:0; 
@@ -517,6 +518,7 @@ hr{
 
 .share-buttons_h .padd{
   margin-left:-2px;
+  margin-top: 20px;
 }
 
 
@@ -539,7 +541,7 @@ hr{
 	
 	border: 0; 
 	width:100%;
-	height: 1.5px; 
+	height: 3px; 
 	text-align: center; 
 	background: rgb(0,0,0);
 	background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(51,51,51,1) 40%, rgba(96,96,96,1) 50%, rgba(51,51,51,1) 60%, rgba(0,0,0,1) 100%);
