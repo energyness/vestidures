@@ -38,7 +38,7 @@
 }
 
 .carousel-inner{
-	margin-top: 60px;
+	margin-top: 70px;
 }
 
 .select{
@@ -170,6 +170,7 @@
     	font-size: 80px;
         line-height:85px;
         letter-spacing:-2pt;
+        padding-top: 10px;
     }
 
 }
