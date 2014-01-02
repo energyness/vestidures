@@ -90,13 +90,12 @@ hr{
 }
 
 #footer{
-	font-family: "Arial Narrow2";
+	
 	font-weight: 300;
 	line-height: 8px;
 	text-align: center;
-	font-size: 8pt;
+
 	color:#666666;
-	
 	
 	padding-bottom: 20px;
 }
@@ -104,19 +103,32 @@ hr{
 
 #footer .ines{
 	color:white;
+	font-family: "Times";
+	font-size: 12pt;
+	font-style: italic;
 }
 
-/*#footer .link_foot{
+#footer .power{
+	color:white;
+	font-family: "Times";
+	font-style: italic;
+	color: #808080;
+	font-size: 12pt;
+}
+
+#footer .link_foot{
 	padding-top: 10px;
-}*/
+}
 
 #footer a{
+	font-family: "Arial Narrow2";
+	font-size: 13pt;
 	text-decoration: none;
-	color:#666666;
+	color:#4d4d4d;
 }
 
 #footer a:hover{
-	color: white;
+	color: #ffff47;
 }
 
 /*==================================================================
@@ -216,7 +228,7 @@ hr{
 }
 /* CSS grid per les mandales en miniatura*/
 #grid{
-	margin-top: 150px;
+	margin-top: 170px;
     margin-bottom: 35px;
 
 }
@@ -543,7 +555,7 @@ hr{
 	
 	border: 0; 
 	width:100%;
-	height: 3px; 
+	height: 2px; 
 	text-align: center; 
 	background: rgb(0,0,0);
 	background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(51,51,51,1) 40%, rgba(96,96,96,1) 50%, rgba(51,51,51,1) 60%, rgba(0,0,0,1) 100%);
@@ -667,5 +679,76 @@ hr{
 		width: 550px;
 	}
 }
+
+@media (max-width: 1200px){
+/* CSS grid per les mandales en miniatura*/
+	#grid{
+		margin-top: 170px;
+	    margin-bottom: 35px;
+
+	}
+
+	/*Centrar el GRID*/
+	.left{
+		z-index: 2;  /*Ens permet solapar els divs*/
+		margin-right: -30px;
+		margin-left: 30px;
+	}
+
+	.center{
+		z-index:1;
+
+	}
+
+	.right{
+		z-index:2;
+		margin-left: -30px;
+	}
+
+	.navbar .navbar-nav > li > a {
+		font-size:12pt;
+
+	}
+
+	.navbar-nav > li > a
+	{
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  padding-left: 5px;
+	  padding-right:5px;
+	  line-height: 5px;
+	}
+
+	.lang{
+		 color:#666666	;
+		 font-size: 12px;
+		 padding: 2.5px;
+	}
+
+	.music{
+
+	font-size: 8px;
+	 padding: 2.5px;
+
+	}
+
+
+	.navbar .navbar-nav img {
+		right: 228px;
+		top: 15px;
+	}
+}
+
+@media (max-width: 1085px){
+		.navbar .navbar-nav > li > a {
+		font-size:14px;
+
+	}
+		.navbar .navbar-nav img {
+		right: 218px;
+		top: 15px;
+	}
+
+	}
 
 

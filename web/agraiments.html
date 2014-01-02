@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/default.css" rel="stylesheet">
+    <link href="./css/phone.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -44,10 +45,13 @@
         }(document));
     </script>
     
-    <nav class="navbar navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-fixed-top visible-lg visible-md " role="navigation">
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <div class="navbar-header">
+          <a class="navbar-brand logo_V" rel="home"><img src="./images/others/logo_V.jpg"></a>
+        </div>
         <ul class="nav navbar-nav">
                 <li ><a class= "  pages" href="./no_formula.html">NO HI HA FÓRMULA</a></li>
                 <li ><a class= "pages" href="./906090.html">90-60-90</a></li>
@@ -55,15 +59,18 @@
                 <li><a class= "pages" href="./ganga_style.html">GANGA STYLE</a></li>
                 <li><a class= "pages" href="./fashionism.html">FASTSHIONISM</a></li>
                 <li><a class= "pages" href="./poca_vida.html">POCA VIDA</a></li>
-                <li><a class= " pages" href="./about.html">ABOUT</a></li>
-               <li><a class= " pages" href="http://vestidures.blogspot.com.es/p/blog-page.html " target="_blank">VESTIDURES</a></li>
+                <li><a class= "active2 pages" href="./about.html">ABOUT</a></li>
+                <li><a class= " pages" href="http://vestidures.blogspot.com.es/p/blog-page.html" target="_blank">VESTIDURES</a></li>
         </ul>
         </div>
+
       <div class="collapse navbar-collapse navbar-ex2-collapse">
-        <ul class="nav navbar-nav navbar-right">
 
-                 <li> <a class="lang music" style="font-size:10pt;font-family:'Arial2';" href="JavaScript:void()" onClick="window.open('./music.html','nohihaformulaplayer','width=397,height=150,toolbar=no,status=no,resizable=0,menubar=no,location=no,directories=no,scrollbars=no'); return false;"> 
+        <ul class="nav navbar-nav navbar-right not">
 
+                <li> <a class="lang music" style="font-size:10pt;font-family:'Arial2';" href="JavaScript:void()" onClick="window.open('./music.html','nohihaformulaplayer','width=397,height=150,toolbar=no,status=no,resizable=0,menubar=no,location=no,directories=no,scrollbars=no'); return false;"> 
+
+                 </a></li>
                 <li><a class="lang" href="./index.html">CAT</a></li>
                 <li><a class="lang" href="./es/index.html">ES</a></li>
                 <li><a class="lang" href="./en/index.html">EN</a></li>
@@ -71,7 +78,7 @@
       </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="container">
+    <div class="container visible-lg visible-md">
     
             
              <div  class="about">
@@ -136,14 +143,47 @@
   
     </div>
 
-    <div id="footer" class="navbar navbar-fixed-bottom">
-        <hr class= "myhr">
-      <div class="container">
-        <p class="ines">&copy;&copy; Inés Tarradellas 2013</p>
-        <p >built on github by Pau Fabregat</p>
-        <p class="link_foot"> <a href="./about.html" >ABOUT</a> | <a href="./agraiments.html">AGRAÏMENTS</a> | <a href="./contacte.html">CONTACTE</a></p>
+    <nav class="navbar navbar-default navbar-fixed-top visible-xs visible-sm" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle btn-custom" data-toggle="collapse" data-target="#yey">
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="yey">
+              <ul class="nav navbar-nav">
+                <li ><a class= " pages" href="./no_formula.html">NO HI HA FÓRMULA</a></li>
+                <li ><a class= "pages" href="./906090.html">90-60-90</a></li>
+                <li><a class= "pages" href="./dinero_gratis.html">DINERO GRATIS</a></li>         
+                <li><a class= "pages" href="./ganga_style.html">GANGA STYLE</a></li>
+                <li><a class= "pages" href="./fashionism.html">FASTSHIONISM</a></li>
+                <li><a class= "pages" href="./poca_vida.html">POCA VIDA</a></li>
+                <li><a class= "pages" href="./about.html">ABOUT</a></li>
+                <li ><a class= "pages" href="./index.html">START/HOME</a></li>
+              </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div class='container visible-xs visible-sm'>
+           <div  class="about">
+              <p class="mayus">AGRAÏMENTS </p>
+
+              <p > Gràcies a Raquel Pelta, per l’exigència en la rigurositat de l'argumentació; gràcies per contagiar-me la importància de la qualitat en el contingut. Gràcies a totes aquelles persones que d’una forma o altra van ajudar a solidificar les idees, pel seu interès i alhora discussió sobre els diferents temes: Mònica Guiteras, Ricard Blanch, Irene Tarradellas, Júlia Tobenya, Pau Sabater, Íngrid Rovira, Ana Isern, Rafa Sala, Alexis Frantz, Lucía Bretos entre tants d’altres. Gràcies a Mikel Pascal per ajudar a definir el plantejament del projecte. Gràcies a Helena López pel suport en estratègia de comunicació. Gràcies a Susan Beijn & John Patrick per la seva visió experimentada en la part gràfica. Gràcies a Pedro Inoue per ser el gran referent visual d'aquest projecte. Agraïments especials pel treball tècnic de programació i traducció en aquesta fase final de publicació de la campanya: Pau Fabregat, Iván Alfonso, Ane Egiguren. </p>
+            </div>
+
 
       </div>
+
+    <div id="footer">
+        <hr class= "myhr" style="margin-bottom:3px;">
+        <hr class= "myhr" style="margin-top:0px;">
+        <div class="container">
+          <p class="ines" style="margin-top:15px;">&copy; INÉS TARRADELLAS 2013</p>
+          <p class="power"> powered by Vestidures | built on github by Pau Fabregat </p>
+          <p class="link_foot"> <a href="./about.html" >ABOUT</a> | <a href="./agraiments.html">AGRAÏMENTS</a> | <a href="./contacte.html">CONTACTE</a></p>
+
+        </div>
     </div>
 
 

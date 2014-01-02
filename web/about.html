@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/default.css" rel="stylesheet">
+    <link href="./css/phone.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -44,10 +45,13 @@
         }(document));
     </script>
     
-    <nav class="navbar navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-fixed-top visible-lg visible-md " role="navigation">
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <div class="navbar-header">
+          <a class="navbar-brand logo_V" rel="home"><img src="./images/others/logo_V.jpg"></a>
+        </div>
         <ul class="nav navbar-nav">
                 <li ><a class= "  pages" href="./no_formula.html">NO HI HA FÓRMULA</a></li>
                 <li ><a class= "pages" href="./906090.html">90-60-90</a></li>
@@ -56,14 +60,17 @@
                 <li><a class= "pages" href="./fashionism.html">FASTSHIONISM</a></li>
                 <li><a class= "pages" href="./poca_vida.html">POCA VIDA</a></li>
                 <li><a class= "active2 pages" href="./about.html">ABOUT</a></li>
-               <li><a class= " pages" href="http://vestidures.blogspot.com.es/p/blog-page.html " target="_blank">VESTIDURES</a></li>
+                <li><a class= " pages" href="http://vestidures.blogspot.com.es/p/blog-page.html" target="_blank">VESTIDURES</a></li>
         </ul>
         </div>
+
       <div class="collapse navbar-collapse navbar-ex2-collapse">
-        <ul class="nav navbar-nav navbar-right">
 
-                 <li> <a class="lang music" style="font-size:10pt;font-family:'Arial2';" href="JavaScript:void()" onClick="window.open('./music.html','nohihaformulaplayer','width=397,height=150,toolbar=no,status=no,resizable=0,menubar=no,location=no,directories=no,scrollbars=no'); return false;"> 
+        <ul class="nav navbar-nav navbar-right not">
 
+                <li> <a class="lang music" style="font-size:10pt;font-family:'Arial2';" href="JavaScript:void()" onClick="window.open('./music.html','nohihaformulaplayer','width=397,height=150,toolbar=no,status=no,resizable=0,menubar=no,location=no,directories=no,scrollbars=no'); return false;"> 
+
+                 </a></li>
                 <li><a class="lang" href="./index.html">CAT</a></li>
                 <li><a class="lang" href="./es/index.html">ES</a></li>
                 <li><a class="lang" href="./en/index.html">EN</a></li>
@@ -71,7 +78,7 @@
       </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="container">
+    <div class="container visible-lg visible-md">
     
             
              <div  class="about">
@@ -140,15 +147,55 @@
   
     </div>
 
-    <div id="footer" class="navbar navbar-fixed-bottom">
-        <hr class= "myhr">
-      <div class="container">
-        <p class="ines">&copy;&copy; Inés Tarradellas 2013</p>
-        <p >built on github by Pau Fabregat</p>
-        <p class="link_foot"> <a href="./about.html" >ABOUT</a> | <a href="./agraiments.html">AGRAÏMENTS</a> | <a href="./contacte.html">CONTACTE</a></p>
+          <!-- ***********
+      VERSIO MOBILE 
+      **************-->
+    <nav class="navbar navbar-default navbar-fixed-top visible-xs visible-sm" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle btn-custom" data-toggle="collapse" data-target="#yey">
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="yey">
+              <ul class="nav navbar-nav">
+                <li ><a class= " pages" href="./no_formula.html">NO HI HA FÓRMULA</a></li>
+                <li ><a class= "pages" href="./906090.html">90-60-90</a></li>
+                <li><a class= "pages" href="./dinero_gratis.html">DINERO GRATIS</a></li>         
+                <li><a class= "pages" href="./ganga_style.html">GANGA STYLE</a></li>
+                <li><a class= "pages" href="./fashionism.html">FASTSHIONISM</a></li>
+                <li><a class= "pages" href="./poca_vida.html">POCA VIDA</a></li>
+                <li><a class= "active2 pages" href="./about.html">ABOUT</a></li>
+                <li ><a class= "pages" href="./index.html">START/HOME</a></li>
+              </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div class='container visible-xs visible-sm'>
+           <div  class="about">
+              <p class="mayus">ABOUT </p>
+
+              <p > NO HI HA FÓRMULA és un projecte de Inés Tarradellas iniciat com a projecte final d'estudis al 2011 i portat a la realitat al desembre de 2013. </p>
+
+              <p > La campanya es construeix paral·lelament a una sèrie de principis polítics que proposen una forma més lliure i més conscient de viure el tema de la roba. Aquests principis formen la filosofia de <a class= 'gr' href="http://vestidures.blogspot.com.es/p/blog-page.html" target="_blank">Vestidures, projecte in-progress de recerca i experimentació d'alternatives.</a> </p>
+
+              <p > Per a més informació, vegi's <a href="http://www.inesisnotanartist.com/nohihaformula" target="_blank">making of</a> o contacti's amb <a href="http://www.nohihaformula.org/contact" target="_blank">l'autora</a>. </p>
+            </div>
+
 
       </div>
-    </div>
+
+      <div id="footer">
+        <hr class= "myhr" style="margin-bottom:3px;">
+        <hr class= "myhr" style="margin-top:0px;">
+        <div class="container">
+          <p class="ines" style="margin-top:15px;">&copy; INÉS TARRADELLAS 2013</p>
+          <p class="power"> powered by Vestidures | built on github by Pau Fabregat </p>
+          <p class="link_foot"> <a href="./about.html" >ABOUT</a> | <a href="./agraiments.html">AGRAÏMENTS</a> | <a href="./contacte.html">CONTACTE</a></p>
+
+        </div>
+      </div>
 
 
 

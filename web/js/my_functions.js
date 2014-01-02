@@ -13,9 +13,10 @@ setTimeout(function() {
     var img = $('<img id="note">'); //Equivalent: $(document.createElement('img'))
     img.attr('src', './images/others/icona_music.png');
     img.attr('style', 'margin-top:10px;');
-    img.appendTo('.not');
+    
 
     $('.music').append('Play soundtrack!'); 
+    img.appendTo('.not');
 
     $('.paddp').css('display','inline'); 
 
@@ -177,12 +178,13 @@ function changeLang(text)
    $('.gbuttH').css('margin-left', 0); //fit gbuttH...it is a bad boooy!
   $(window).resize(function(){
         w = $(window).width();
-        $('.imageP').css('width', w-60);
+       
 
          ww = $('.col-xs-4').width()
         $('.gbuttH').css('margin-left', 0);
 
         $('.social_phone').css('width',w-30); //fit social buttons--> allway center!
+
     });
 
 
