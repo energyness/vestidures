@@ -137,6 +137,13 @@
 
 .navbar-collapse.in {
     padding-top: 0px;
+    width: 175px;
+    background-color: white;
+}
+
+.collapsing {
+  width:175px;
+  background-color: white;
 }
 
 .next2,
