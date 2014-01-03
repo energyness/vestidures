@@ -194,10 +194,12 @@ function wait(button){
   }
 
 $("button").on("touchstart", function(){ 
-    $(this).removeClass("mobileHoverFix");
+    $(this).removeClass("btn-background");
+    $(this).addClass("btn-background-hov");
 });
 $("button").on("touchend", function(){ 
-    $(this).addClass("mobileHoverFix");
+    $(this).removeClass("btn-background-hov");
+    $(this).addClass("btn-background");
 });
 
 /*NOT USED */
