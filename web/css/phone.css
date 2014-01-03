@@ -216,12 +216,13 @@
         font-family: "Trebuchet";
         font-weight: 100;
         font-size: 11pt;
-        font-style: italic;
+        font-style: normal;
     }
 
     #footer .power{
         font-family: "Trebuchet";
         color: #696969;
+        font-style: normal;
 
     }
 
