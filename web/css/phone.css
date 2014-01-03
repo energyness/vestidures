@@ -130,13 +130,6 @@
     position: absolute;
 }
 
-.btn-custom:hover{
-    background-image: url('../images/buttons/btn-click.png');
-    width:40px;
-    height: 40px;
-
-}
-
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: transparent;
