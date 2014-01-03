@@ -161,15 +161,6 @@ function wait(button){
 
 }
 
-//We select a language and the button 'Go' get the desired url for the language
-function changeLang(text)
-{
-
-    var lang = $('.go'); //Equivalent: $(document.createElement('img'))
-    lang.attr('href', text);
-
-}
-
 //Fit elements
   w = $(window).width();
   $('.imageP').css('width', w-60); //fit image with the modal, even resizing
@@ -202,7 +193,15 @@ function changeLang(text)
       });
   }
 
-  //Funció per canvia els textos quan fas click sobre idioma seleccionat (mobile version)
+$("button").on("touchstart", function(){ 
+    $(this).removeClass("mobileHoverFix");
+});
+$("button").on("touchend", function(){ 
+    $(this).addClass("mobileHoverFix");
+});
+
+/*NOT USED */
+//Funció per canvia els textos quan fas click sobre idioma seleccionat (mobile version)
 function changeTextM(text, enter)
 {
     var display = document.getElementById('intext');
@@ -215,20 +214,14 @@ function changeTextM(text, enter)
 
 
 }
+//We select a language and the button 'Go' get the desired url for the language
+function changeLang(text)
+{
 
-$(".btn-custom").on("touchstart", function(){ 
-    $(this).css("background-image", "url('../images/buttons/btn-click.png')")
-                /*  "width":"40px",
-                  "height": "40px"})*/
-});
+    var lang = $('.go'); //Equivalent: $(document.createElement('img'))
+    lang.attr('href', text);
 
-/*$(".btn-custom").on("touchend", function(){ 
-    $(this).css({"background-image": "url('../images/buttons/btn_menu.png')",
-                  "width":"40px",
-                  "height": "40px"})
-});*/
-
-
+}
 
 
 
