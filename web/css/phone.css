@@ -212,7 +212,7 @@
     }
 
     #footer .ines{
-        color:#3D3D3D;
+        color:#696969;
         font-family: "Trebuchet";
         font-weight: 100;
         font-size: 11pt;
@@ -221,14 +221,14 @@
 
     #footer .power{
         font-family: "Trebuchet";
-        color: #3D3D3D;
+        color: #696969;
 
     }
 
     #footer a{
         font-family: "Trebuchet";
         font-size: 11pt;
-        color:#3d3d3d;
+        color:#696969;
     }
 
     #footer a:hover{
