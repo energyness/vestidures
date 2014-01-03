@@ -129,12 +129,6 @@
     position: absolute;
 }
 
-/*.btn-custom:hover{
-    background-image: url('../images/buttons/btn-click.png');
-    width:40px;
-    height: 40px;
-}*/
-
 .btn-background{
     background-image: url('../images/buttons/btn_menu.png');
 }
@@ -142,12 +136,6 @@
 .btn-background-hov{
     background-image: url('../images/buttons/btn-click.png');
 }
-
-.mobileHoverFix:hover,
-.mobileHoverFix.hover{
-    background-position: 0 0px;
-}
-
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: transparent;

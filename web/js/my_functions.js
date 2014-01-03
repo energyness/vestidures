@@ -193,14 +193,6 @@ function wait(button){
       });
   }
 
-/*$("button").on("touchstart", function(){ 
-    $(this).removeClass("btn-background");
-    $(this).addClass("btn-background-hov");
-});
-$("button").on("touchend", function(){ 
-    $(this).removeClass("btn-background-hov");
-    $(this).addClass("btn-background");
-});*/
 
 (function () {
   var count = 0;
