@@ -113,8 +113,8 @@ hr{
 	color:white;
 	font-family: "Times";
 	font-style: italic;
-	color: #808080;
-	font-size: 12pt;
+	color: #606060;
+	font-size: 11pt;
 }
 
 #footer .link_foot{
@@ -125,7 +125,7 @@ hr{
 	font-family: "Arial Narrow2";
 	font-size: 11pt;
 	text-decoration: none;
-	color:#4d4d4d;
+	color:#333333;
 }
 
 #footer a:hover{
