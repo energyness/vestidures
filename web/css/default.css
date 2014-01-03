@@ -92,8 +92,9 @@ hr{
 #footer{
 	
 	font-weight: 300;
-	line-height: 8px;
+	line-height: 10px;
 	text-align: center;
+	letter-spacing: 1pt;
 
 	color:#666666;
 	
@@ -104,7 +105,7 @@ hr{
 #footer .ines{
 	color:white;
 	font-family: "Times";
-	font-size: 12pt;
+	font-size: 11pt;
 	font-style: italic;
 }
 
@@ -117,12 +118,12 @@ hr{
 }
 
 #footer .link_foot{
-	padding-top: 10px;
+	padding-top: 15px;
 }
 
 #footer a{
 	font-family: "Arial Narrow2";
-	font-size: 13pt;
+	font-size: 11pt;
 	text-decoration: none;
 	color:#4d4d4d;
 }
