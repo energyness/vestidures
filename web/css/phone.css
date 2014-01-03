@@ -131,15 +131,18 @@
     background-image: url('../images/buttons/btn_menu.png');
     background-size: 100%;
     border-radius: 0;
-    width:30px;
-    height: 30px;
+    width:40px;
+    height: 40px;
     border: 0px;
     margin-top: 0px;
+    margin-left: 0px;
     position: absolute;
 }
 
 .btn-custom:hover{
     background-image: url('../images/buttons/btn-click.png');
+    width:40px;
+    height: 40px;
 
 }
 
@@ -157,7 +160,7 @@
     color:#ffff47;
     text-decoration: underline;
     margin-right: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .go,
@@ -207,7 +210,8 @@
     .navbar-header{
         background-color: #333333;
         opacity: 0.96;
-        height:30px;
+        height:40px;
+        
     }
 
     #footer{
@@ -280,10 +284,11 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-
+    
     .navbar-header{
-    background-color: #333333;
-    opacity: 0.96;
+        background-color: #333333;
+        opacity: 0.96;
+        height:40px;    
     }
 
 }
