@@ -217,10 +217,14 @@ function changeTextM(text, enter)
 }
 
 $(".btn-custom").on("touchstart", function(){ 
-    $(this).removeClass("mobileHoverFix");
+    $(this).css({"background-image": "url('../images/buttons/btn-click.png')",
+                  "width":"40px",
+                  "height": "40px"})
 });
 $(".btn-custom").on("touchend", function(){ 
-    $(this).addClass("mobileHoverFix");
+    $(this).css({"background-image": "url('../images/buttons/btn_menu.png')",
+                  "width":"40px",
+                  "height": "40px"})
 });
 
 
