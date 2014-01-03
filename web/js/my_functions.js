@@ -197,7 +197,7 @@ function wait(button){
 (function () {
   var count = 0;
 
-  $('button').click(function () {
+  $('.btn-custom').click(function () {
     count += 1;
     if (count%2==0) {
       $(this).removeClass("btn-background-hov");
