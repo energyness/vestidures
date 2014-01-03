@@ -1,6 +1,30 @@
-    /*==================================================================
-    CSS mobile version
-    ====================================================================*/
+/*==================================================================
+CSS mobile version
+====================================================================*/
+
+/*==================================================================
+CSS  Bootstrap classes modified
+====================================================================*/
+.item{
+    margin: 0 auto;
+    left:0;
+    right:0;
+}
+
+.item img {
+    margin: 0 auto;
+    left:0;
+    right:0;
+}
+
+.carousel-inner{
+    margin-top: 90px;
+}
+
+/*==================================================================
+CSS custom
+====================================================================*/
+/* Text */
 #intext{
     background-color: transparent;
     font-family: "Arial2";
@@ -25,21 +49,6 @@
 
 }
 
-.item{
-  	margin: 0 auto;
-    left:0;
-    right:0;
-}
-
-.item img {
-  	margin: 0 auto;
-    left:0;
-    right:0;
-}
-
-.carousel-inner{
-	margin-top: 90px;
-}
 
 .select{
 	margin-top: 30px;
@@ -234,8 +243,9 @@
     #footer a{
         font-family: "Trebuchet";
         font-size: 11pt;
-        color:#808080;
-        text-decoration: underline;
+        color:white;
+        text-decoration: none;
+
     }
 
     #footer a:hover{

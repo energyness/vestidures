@@ -1,34 +1,34 @@
-    /*==================================================================
-    CSS per defecte
-    ====================================================================*/
-    /*we set the font style we want*/
+/*==================================================================
+CSS DEFAULT
+====================================================================*/
+
+@font-face
+{
+font-family: "Fjalla";
+src: url('../fonts/FjallaOne-Regular.otf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
+
   @font-face
-    {
-    font-family: "Fjalla";
-    src: url('../fonts/FjallaOne-Regular.otf');
-        /*,url('Sansation_Light.eot'); /* IE9 */
-    }
+{
+font-family: "Arial2";
+src: url('../fonts/Arial.ttf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
 
-      @font-face
-    {
-    font-family: "Arial2";
-    src: url('../fonts/Arial.ttf');
-        /*,url('Sansation_Light.eot'); /* IE9 */
-    }
+  @font-face
+{
+font-family: "Arial Narrow2";
+src: url('../fonts/Arial-Narrow.ttf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
 
-      @font-face
-    {
-    font-family: "Arial Narrow2";
-    src: url('../fonts/Arial-Narrow.ttf');
-        /*,url('Sansation_Light.eot'); /* IE9 */
-    }
-
-    @font-face
-    {
-    font-family: "Times";
-    src: url('../fonts/times.ttf');
-        /*,url('Sansation_Light.eot'); /* IE9 */
-    }
+@font-face
+{
+font-family: "Times";
+src: url('../fonts/times.ttf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
 
 body {
         padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -49,7 +49,7 @@ hr{
 }
 
 /*==================================================================
-    CSS classes Bootstrap
+CSS  Bootstrap classes modified
 ====================================================================*/
 
 
@@ -90,7 +90,7 @@ hr{
 }
 
 /*==================================================================
-    CSS personalitzat
+CSS custom
 ====================================================================*/
 /*Coming soon*/
 .soon{
@@ -128,7 +128,7 @@ hr{
 }
 
 
-/* CSS barra navegació pagines */
+/* Pages navbar */
 .logo_V {
 	padding: 5px 5px;
 	margin-top: -12px;
@@ -140,7 +140,7 @@ hr{
 	color:black;
 }
 
-.active2 { /*Manté el color de la pagina on ens trobem*/
+.active2 { /*keep color within the page we are*/
 	 background-color: #ffff47;
 	 color:black;
 }
@@ -155,7 +155,7 @@ hr{
 	color:white;
 }
 
-/* CSS Barra navegació llengües */
+/* CSS Language navbar */
 .lang{
 	 color:#666666	;
 	 font-size: 12px;
@@ -184,14 +184,14 @@ hr{
 	background-color: transparent;
 	color:white;
 }
-/* CSS grid per les mandales en miniatura*/
+/* Mandala's grid*/
 #grid{
 	margin-top: 170px;
     margin-bottom: 35px;
 
 }
 
-/*Centrar el GRID*/
+/*Center GRID*/
 .left{
 	z-index: 2;  /*Ens permet solapar els divs*/
 	margin-right: -90px;
@@ -208,7 +208,7 @@ hr{
 	margin-left: -90px;
 }
 
-/* CSS Títol gran intro i mandales */
+/* Title */
 .ptitle{ 
 	font-family: "Fjalla";
 	font-weight:100;
@@ -228,7 +228,7 @@ hr{
 
 }
 
-/*CSS Imatge Mandales*/
+/*Mandales images*/
 .image{
    
    width:600px;
@@ -241,22 +241,7 @@ hr{
 
 }
 
-/*CSS Imatge Manifest*/
-.image2{
-   position:absolute;
-   top: 15%;
-    margin: 0 auto;
-    left:0;
-    right:0;
-}
-
-
-.image_h{
-   padding-top: 20px;
-   margin-left: 31%;
-}
-
-/* CSS Textos intro i mandales*/
+/*Intro and mandales text */
 .texto_intro{
 	font-family: "Arial2";
 	/*font-style: italic;*/
@@ -304,7 +289,7 @@ hr{
 	margin-bottom:10pt;
 }
 
-/*CSS about, agraiments, contacte */
+/*About, Agraiments, Contacte */
 
 .about {
 	background-color: transparent;
@@ -346,34 +331,6 @@ hr{
 	color:#808080;
 }
 
-
-/*CSS Manifest */
-
-#think{
-	font-family: "Arial2";
-	text-align: center;
-	color:white;
-	  font-size: 20pt;
-	  letter-spacing:4px;
-
-	  padding-top: 15px;
-	   margin-left: 2%;
-
-}
-
-#tumblr{
-	font-family: "Arial2";
-	text-align: center;
-	color:white;
-	font-size: 17pt;
-
-	 padding-top: 15px;
-	 margin-left: 2%;
-	  text-decoration:underline;
-
-}
-
-
 /* CSS SOCIAL BUTTONS*/
 /*VERTICALS*/
 #share-buttons{
@@ -401,10 +358,6 @@ hr{
 	
 	background-color: transparent;
 	left:60px;
-
-
-
-	
 }
 
 .social_act div{
@@ -552,7 +505,7 @@ hr{
 	font-family: "Trebuchet";
 	font-weight: 100;
 	font-style: italic;
-	color: #696969;
+	color: #808080;
 	font-size: 11pt;
 }
 
@@ -673,14 +626,7 @@ hr{
     
 } 
 
-#disqus_thread{
-	margin-top: 60px;
-}
-@media (min-width: 600px){
-	#disqus_thread{
-		width: 550px;
-	}
-}
+/*Responsive smaller desktops*/
 
 @media (max-width: 1200px){
 /* CSS grid per les mandales en miniatura*/
