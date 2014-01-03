@@ -21,6 +21,28 @@ CSS  Bootstrap classes modified
     margin-top: 90px;
 }
 
+
+.select{
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.navbar-default{
+    border-color: transparent;
+    background-color: transparent;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    z-index: 1050;
+
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 20px;
+    z-index:1050;
+}
+
 /*==================================================================
 CSS custom
 ====================================================================*/
@@ -49,17 +71,13 @@ CSS custom
 
 }
 
-
-.select{
-	margin-top: 30px;
-    text-align: center;
-
-}
+/*Entry to the website*/
 
 .enter{
 	margin-top: 10px;
 }
 
+/* Social buttons*/
 .social_phone{
 
     text-align: center;
@@ -99,21 +117,6 @@ CSS custom
 
 .paddp{
     display:none;
-}
-
-.navbar-default{
-    border-color: transparent;
-    background-color: transparent;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    z-index: 1050;
-
-}
-
-.navbar-toggle {
-    float: left;
-    margin-left: 20px;
-    z-index:1050;
 }
 
 #yey a{
