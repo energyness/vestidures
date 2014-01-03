@@ -193,14 +193,30 @@ function wait(button){
       });
   }
 
-$("button").on("touchstart", function(){ 
+/*$("button").on("touchstart", function(){ 
     $(this).removeClass("btn-background");
     $(this).addClass("btn-background-hov");
 });
 $("button").on("touchend", function(){ 
     $(this).removeClass("btn-background-hov");
     $(this).addClass("btn-background");
-});
+});*/
+
+(function () {
+  var count = 0;
+
+  $('button').click(function () {
+    count += 1;
+    if (count%2==0) {
+      $(this).removeClass("btn-background-hov");
+      $(this).addClass("btn-background");
+    }
+    else{
+      $(this).removeClass("btn-background");
+      $(this).addClass("btn-background-hov");
+    }
+  });
+})();
 
 /*NOT USED */
 //Funció per canvia els textos quan fas click sobre idioma seleccionat (mobile version)
