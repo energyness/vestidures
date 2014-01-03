@@ -180,6 +180,7 @@
 
 .myhrP{
     color:white;
+    width: auto;
 }
 
 @media (max-width:560px){
