@@ -105,6 +105,7 @@ hr{
 #footer .ines{
 	color:white;
 	font-family: "Times";
+	font-weight: 100;
 	font-size: 11pt;
 	font-style: italic;
 }
@@ -112,6 +113,7 @@ hr{
 #footer .power{
 	color:white;
 	font-family: "Times";
+	font-weight: 100;
 	font-style: italic;
 	color: #606060;
 	font-size: 11pt;
