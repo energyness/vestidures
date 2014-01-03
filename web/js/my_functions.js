@@ -216,6 +216,13 @@ function changeTextM(text, enter)
 
 }
 
+$(".btn-custom").on("touchstart", function(){ 
+    $(this).removeClass("mobileHoverFix");
+});
+$(".btn-custom").on("touchend", function(){ 
+    $(this).addClass("mobileHoverFix");
+});
+
 
 
 
