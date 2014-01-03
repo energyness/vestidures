@@ -216,12 +216,12 @@ function changeTextM(text, enter)
 
 }
 
-$(".btn-custom").on("touchstart", function(){ 
+$("button").on("touchstart", function(){ 
     $(this).css({"background-image": "url('../images/buttons/btn-click.png')",
                   "width":"40px",
                   "height": "40px"})
 });
-$(".btn-custom").on("touchend", function(){ 
+$("button").on("touchend", function(){ 
     $(this).css({"background-image": "url('../images/buttons/btn_menu.png')",
                   "width":"40px",
                   "height": "40px"})
