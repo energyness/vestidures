@@ -43,6 +43,34 @@ CSS  Bootstrap classes modified
     z-index:1050;
 }
 
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-collapse.in {
+    padding-top: 0px;
+    width: 175px;
+    background-color: white;
+}
+
+.collapsing {
+  width:175px;
+  background-color: white;
+}
+
+.carousel .item {-webkit-transition: opacity 0s; -moz-transition: opacity 0s; -ms-transition: opacity 0s; -o-transition: opacity 0s; transition: opacity 0s;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
 /*==================================================================
 CSS custom
 ====================================================================*/
@@ -75,6 +103,12 @@ CSS custom
 
 .enter{
 	margin-top: 10px;
+}
+
+.go,
+.go:hover{
+    color:#ffff47;
+    text-decoration: underline;
 }
 
 /* Social buttons*/
@@ -119,6 +153,7 @@ CSS custom
     display:none;
 }
 
+/* Collapse menu dropdown*/
 #yey a{
     color:black;
     background-color: white;
@@ -130,6 +165,7 @@ CSS custom
     background-color: #ffff47;
 }
 
+/*Collapse button*/
 .btn-custom{
     background-size: 100%;
     border-radius: 0;
@@ -149,20 +185,7 @@ CSS custom
     background-image: url('../images/buttons/btn-click.png');
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: transparent;
-}
-
-.navbar-collapse.in {
-    padding-top: 0px;
-    width: 175px;
-    background-color: white;
-}
-
-.collapsing {
-  width:175px;
-  background-color: white;
-}
+/*Button next navbar collapse*/
 
 .next2,
 .next2:hover{
@@ -173,43 +196,32 @@ CSS custom
     margin-top: 10px;
 }
 
-.go,
-.go:hover{
-    color:#ffff47;
-    text-decoration: underline;
-}
 
-
-.carousel .item {-webkit-transition: opacity 0s; -moz-transition: opacity 0s; -ms-transition: opacity 0s; -o-transition: opacity 0s; transition: opacity 0s;}
-.carousel .active.left {left:0;opacity:0;z-index:2;}
-.carousel .next {left:0;opacity:1;z-index:1;}
-
-.img-responsive {
-    margin: 0 auto;
-}
-
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
+/*Hr mobile version*/
 .myhrP{
     color:#808080;
     width: auto;
 }
 
+/*==================================================================
+ RESPONSIVE DESIGN Mobile & Tablet
+====================================================================*/
+/*Narrower mobile*/
 @media (max-width:560px){
     .about{
         width:auto;
     }
 }
+
+/*Mobile*/
 @media (max-width: 768px){
 	body {
         padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
         background-color: black;
         padding-bottom: 15px;
 
-      }
+    }
+
     .ptitle{
     	font-size: 80px;
         line-height:85px;
@@ -261,13 +273,15 @@ CSS custom
 
 }
 
+/*Tablets*/
 @media (max-width: 992px){
     body {
         padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
         background-color: black;
         padding-bottom: 15px;
 
-      }
+    }
+
     .ptitle{
         font-size: 80px;
         line-height:85px;
@@ -275,6 +289,11 @@ CSS custom
         padding-top: 10px;
     }
 
+    .navbar .navbar-nav > li > a {
+        font-size: 15px;
+    }
+
+    /*This CSS allows us to collapse navbar before default in bootstrap*/
     .navbar-header {
         float: none;
     }
@@ -304,10 +323,6 @@ CSS custom
         background-color: #333333;
         opacity: 0.96;
         height:40px;    
-    }
-
-    .navbar .navbar-nav > li > a {
-        font-size: 15px;
     }
 
 }

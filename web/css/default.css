@@ -626,7 +626,9 @@ CSS custom
     
 } 
 
-/*Responsive smaller desktops*/
+/*==================================================================
+ RESPONSIVE Smallers Desktops
+====================================================================*/
 
 @media (max-width: 1200px){
 /* CSS grid per les mandales en miniatura*/
