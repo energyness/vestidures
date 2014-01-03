@@ -89,50 +89,6 @@ hr{
 
 }
 
-#footer{
-	
-	font-weight: 300;
-	line-height: 10px;
-	text-align: center;
-	letter-spacing: 0.2pt;
-
-	color:#666666;
-	
-	padding-bottom: 20px;
-}
-
-
-#footer .ines{
-	color:white;
-	font-family: "Times";
-	font-weight: 100;
-	font-size: 11pt;
-	font-style: italic;
-}
-
-#footer .power{
-	font-family: "Times";
-	font-weight: 100;
-	font-style: italic;
-	color: #696969;
-	font-size: 11pt;
-}
-
-#footer .link_foot{
-	padding-top: 15px;
-}
-
-#footer a{
-	font-family: "Arial Narrow2";
-	font-size: 12pt;
-	text-decoration: none;
-	color:#3d3d3d;
-}
-
-#footer a:hover{
-	color: #ffff47;
-}
-
 /*==================================================================
     CSS personalitzat
 ====================================================================*/
@@ -570,7 +526,51 @@ hr{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
 }
 
+/* Footer */
+#footer{
+	
+	font-weight: 300;
+	line-height: 10px;
+	text-align: center;
+	letter-spacing: 0.2pt;
 
+	color:#666666;
+	
+	padding-bottom: 20px;
+}
+
+
+#footer .ines{
+	color:white;
+	font-family: "Times";
+	font-weight: 100;
+	font-size: 11pt;
+	font-style: italic;
+}
+
+#footer .power{
+	font-family: "Times";
+	font-weight: 100;
+	font-style: italic;
+	color: #696969;
+	font-size: 11pt;
+}
+
+#footer .link_foot{
+	padding-top: 15px;
+}
+
+#footer a{
+	font-family: "Arial Narrow2";
+	font-size: 12pt;
+	text-decoration: none;
+	color:#3d3d3d;
+}
+
+#footer a:hover{
+	color: #ffff47;
+}
+ 
 /* CSS Music player */
 .music{
 	outline: none;  

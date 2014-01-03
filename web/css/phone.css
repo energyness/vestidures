@@ -1,5 +1,5 @@
     /*==================================================================
-    CSS per defecte
+    CSS mobile version
     ====================================================================*/
 #intext{
     background-color: transparent;
@@ -87,15 +87,6 @@
 .gbuttH{
    text-align: right;
 }
-
-/*.social_actp div{
-    background-color: transparent;
-    height: 30px;
-    padding: 1px;
-    display: none;
-    z-index: 152;
-
-}*/
 
 .paddp{
     display:none;
@@ -243,6 +234,9 @@
         color: #ffff47;
     }
 
+    .navbar .navbar-nav > li > a {
+        font-size: 15px;
+    }
 
 }
 
@@ -289,6 +283,10 @@
         background-color: #333333;
         opacity: 0.96;
         height:40px;    
+    }
+
+    .navbar .navbar-nav > li > a {
+        font-size: 15px;
     }
 
 }
