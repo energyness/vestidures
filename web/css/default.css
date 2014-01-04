@@ -60,7 +60,7 @@ CSS  Bootstrap classes modified
 
 .navbar .navbar-nav > li > a {
 	font-family: "Arial Narrow2";
-	font-size:12pt;
+	font-size:11pt;
 	font-weight: 100;
 
 }
@@ -481,7 +481,7 @@ CSS custom
 
 .navbar .navbar-nav img {
 	position:absolute;
-	right: 263px;
+	right: 327px;
 	top: 17px;
 }
 
@@ -589,7 +589,7 @@ CSS custom
 	}
 
 	.navbar .navbar-nav > li > a {
-		font-size:12pt;
+		font-size:11pt;
 
 	}
 
@@ -617,18 +617,18 @@ CSS custom
 
 
 	.navbar .navbar-nav img {
-		right: 228px;
+		right: 280px;
 		top: 15px;
 	}
 }
 
 @media (max-width: 1085px){
 		.navbar .navbar-nav > li > a {
-		font-size:14px;
+		font-size:10pt;
 
 	}
 		.navbar .navbar-nav img {
-		right: 218px;
+		right: 270px;
 		top: 15px;
 	}
 
