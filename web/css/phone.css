@@ -48,12 +48,10 @@ CSS  Bootstrap classes modified
 }
 
 .navbar-collapse.in {
-    width: 155px;
     background-color: white;
 }
 
 .collapsing {
-  width:155px;
   background-color: white;
 }
 
@@ -108,7 +106,7 @@ CSS custom
 .go:hover{
     color:#ffff47;
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 /*Link zoom*/
@@ -124,25 +122,29 @@ CSS custom
 .social_phoneH{
     margin-top: 20px;
     margin-bottom: 30px;
+    width:500px;
    
 }
 
 .butH{
     z-index:-2;
+    width: 20%;
+   
 }
 
 #pbuttH{
-    text-align: center;
+    
 
 }
 
 #fbuttH{
     text-align: right;
-
+    width: 40%;
 }
 
 .gbuttH{
    text-align: left;
+   width: 40%;
 }
 
 /* Collapse menu dropdown*/
@@ -267,6 +269,30 @@ CSS custom
 
     .navbar .navbar-nav > li > a {
         font-size: 15px;
+    }
+
+    .social_phoneH{
+        width: auto;
+        
+    }
+    .butH{
+        width: 33.3333%;
+   
+    }
+
+    #pbuttH{
+        text-align: center;
+
+    }
+
+    #fbuttH{
+        text-align: right;
+        width: 33.3333%;
+    }
+
+    .gbuttH{
+       text-align: left;
+       width: 33.3333%;
     }
 
 }
