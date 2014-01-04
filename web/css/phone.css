@@ -48,13 +48,12 @@ CSS  Bootstrap classes modified
 }
 
 .navbar-collapse.in {
-    padding-top: 0px;
-    width: 175px;
+    width: 155px;
     background-color: white;
 }
 
 .collapsing {
-  width:175px;
+  width:155px;
   background-color: white;
 }
 
@@ -109,25 +108,22 @@ CSS custom
 .go:hover{
     color:#ffff47;
     text-decoration: underline;
+    font-size: 14px;
 }
 
+/*Link zoom*/
+.zoomP,
+.zoomP a{
+    color:white;
+    text-align: right;
+    text-decoration: underline;
+    margin-bottom: 0px;
+    margin-top: -15px;
+}
 /* Social buttons*/
-.social_phone{
-
-    text-align: center;
-    
-
-}
-
-.social_actp {
-    text-align: center;
-    display: none;
-
-
-}
-
 .social_phoneH{
     margin-top: 20px;
+    margin-bottom: 30px;
    
 }
 
@@ -141,16 +137,12 @@ CSS custom
 }
 
 #fbuttH{
-    text-align: left;
+    text-align: right;
 
 }
 
 .gbuttH{
-   text-align: right;
-}
-
-.paddp{
-    display:none;
+   text-align: left;
 }
 
 /* Collapse menu dropdown*/
@@ -238,10 +230,11 @@ CSS custom
 
     #footer{
         text-align: left;
+
     }
 
     #footer .ines{
-        color:#808080;
+        color:#606060;
         font-family: "Trebuchet";
         font-weight: 100;
         font-size: 11pt;
@@ -250,15 +243,20 @@ CSS custom
 
     #footer .power{
         font-family: "Trebuchet";
-        color: #808080;
+        color: #606060;
         font-style: normal;
+
+    }
+
+    #footer .link_foot{
+        color:#999999;
 
     }
 
     #footer a{
         font-family: "Trebuchet";
         font-size: 11pt;
-        color:white;
+        color:#999999;
         text-decoration: none;
 
     }

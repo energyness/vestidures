@@ -1,12 +1,5 @@
 
-/*Centra butons discursos */
-$(function(){
-  var coW = $('.container').width();
-  var shW = coW/2 - 105;
-  $('.share-buttons_h').css('margin-left',shW);
-});
-
-//Thus function avoid wrong image position when loading the page
+//This function avoid wrong image position when loading the page
 var countdown = 5;
 setTimeout(function() {
     
@@ -46,11 +39,27 @@ $(function() {
   });
 
 //Permetre que els buttons horitzontals es possisionin de la mateixa manera respecte el discurs
-var text = document.getElementsByClassName('texto2')[0]
 
-var n=  text.offsetHeight + 545;
+$(function() {
+    var text = document.getElementsByClassName('texto2')[0]
 
- $('.share-buttons_h').css('margin-top', n);
+    var n=  text.offsetHeight + 525;
+
+    w = $(window).width();
+
+    $(window).resize(function(){
+        w = $(window).width(); // get new width after change
+        
+    });
+
+    if(w < 768 ){
+        $('.social_phoneH ').css('margin-top', '20px');
+    }
+    else{
+     $('.social_phoneH ').css('margin-top', n);
+     $('.social_phoneH ').css('width', '500px');
+   }
+});
 
 /* SLIDER */
 
@@ -163,35 +172,18 @@ function wait(button){
 
 //Fit elements
   w = $(window).width();
-  $('.imageP').css('width', w-60); //fit image with the modal, even resizing
 
    ww = $('.col-xs-4').width()
    $('.gbuttH').css('margin-left', 0); //fit gbuttH...it is a bad boooy!
   $(window).resize(function(){
         w = $(window).width();
        
-
          ww = $('.col-xs-4').width()
         $('.gbuttH').css('margin-left', 0);
 
-        $('.social_phone').css('width',w-30); //fit social buttons--> allway center!
+        $('.social_phone').css('width',w-30); //fit social buttons--> allways center!
 
     });
-
-
- if (w <=768){
-    $(window).scroll(function() { //when window is scrolled
-     social= $('.social_phone').offset().top;
-     social_g = $('.social_phoneH').offset().top;;
-       if (social > social_g){
-        $('.paddp').css('display', 'none')
-      }
-      else{
-        $('.paddp').css('display', 'inline')
-      }
-
-      });
-  }
 
 
 (function () {
