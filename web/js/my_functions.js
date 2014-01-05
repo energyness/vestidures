@@ -1,4 +1,14 @@
+$("#fbutt").mouseover(function(){
+  $("#fbutt").css("display","block");
+}); 
 
+$("#gbutt").mouseover(function(){
+  $("#gbutt").css("display","block");
+}); 
+
+$("#pbutt").mouseover(function(){
+  $("#pbutt").css("display","block");
+}); 
 //This function avoid wrong image position when loading the page
 var countdown = 5;
 setTimeout(function() {
@@ -31,11 +41,6 @@ $(function() {
 $(function() {        
     $(".social_act").floatingFixed({ padding: 130 });
 
-  });
-$(function() { 
-
-    $(".social_phone").floatingFixed({ padding: $(window).height()-40});
-    
   });
 
 //Permetre que els buttons horitzontals es possisionin de la mateixa manera respecte el discurs
@@ -185,7 +190,6 @@ function wait(button, seg){
 
     });
 
-
 (function () {
   var count = 0;
 
@@ -224,6 +228,7 @@ function changeLang(text)
     lang.attr('href', text);
 
 }
+
 
 
 

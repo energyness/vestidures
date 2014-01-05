@@ -356,6 +356,7 @@ CSS custom
 	
 	background-color: transparent;
 	left:60px;
+	z-index:2000;
 }
 
 .social_act div{
