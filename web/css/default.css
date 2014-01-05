@@ -303,7 +303,7 @@ CSS custom
     right:0;
 
     width:500px;
-    margin-top:50px;
+    margin-top:45px;
 }
 
 .about p{
@@ -372,8 +372,9 @@ CSS custom
 
 .social_act .fb{
 		
-	margin-top: 11px;
+	margin-top: -300px; /*11px*/
 	padding-left: 10px;
+	display:block;
 
 }
 

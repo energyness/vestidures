@@ -1,20 +1,17 @@
-//This function avoid wrong image position when loading the page
-var countdown = 5;
+/*==================================================================
+MY JS Functions
+====================================================================*/
+
+//This functions allows the like button to not dissapear if diplay:none from the beggining
 setTimeout(function() {
     
-    var img = $('<img id="note">'); //Equivalent: $(document.createElement('img'))
-    img.attr('src', './images/others/icona_music.png');
-    img.attr('style', 'margin-top:10px;');
-    
+    $('.fb').css('margin-top','11px');
+    $('.fb').css('display','none');
 
-    $('.music').append('Play soundtrack!'); 
-    img.appendTo('.not');
+}, 5000);
 
-    $('.paddp').css('display','inline'); 
-
-}, countdown);
-
-//Funció per canvia els titols quan fas hover sobre les imatges
+/*TEXT*/
+//Change titles when you hover an image
 function changeText(text)
 {
     var display = document.getElementById('m_title');
@@ -22,7 +19,8 @@ function changeText(text)
     display.innerHTML = text;
 }
 
-//Social buttons --> padding constant per mantenir el element fixe
+/*SOCIAL BUTTONS*/
+//Social buttons --> constant padding
 $(function() {        
     $("#share-buttons").floatingFixed({ padding: 130 });
 
@@ -32,8 +30,7 @@ $(function() {
 
   });
 
-//Permetre que els buttons horitzontals es possisionin de la mateixa manera respecte el discurs
-
+//Allow rigth horizontal buttons positioning 
 $(function() {
     var text = document.getElementsByClassName('texto2')[0]
 
@@ -56,7 +53,6 @@ $(function() {
 });
 
 /* SLIDER */
-
 $(function() {
 
     var target= $( "#slider-vertical" );
@@ -113,6 +109,7 @@ $(function() {
     
   });
 
+/*ZOOM*/
 window.onload = function(){zoom(1)} //crida a la funció només carregar la pàgina
 
 var img=document.getElementById("pic")
@@ -124,7 +121,6 @@ $(window).resize(function(){
         zoom(1); 
     });
 
-//ZOOM
 function zoom(zm) {
     img=document.getElementById("pic")
     wid=600
@@ -164,11 +160,12 @@ function wait(button, seg){
 
 }
 
+/*Other stuff*/
 //Fit elements
   w = $(window).width();
 
-   ww = $('.col-xs-4').width()
-   $('.gbuttH').css('margin-left', 0); //fit gbuttH...it is a bad boooy!
+  ww = $('.col-xs-4').width()
+  $('.gbuttH').css('margin-left', 0); //fit gbuttH...it is a bad boooy!
   $(window).resize(function(){
         w = $(window).width();
        
@@ -179,6 +176,7 @@ function wait(button, seg){
 
     });
 
+//Simulate hover on mobile 
 (function () {
   var count = 0;
 

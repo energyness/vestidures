@@ -199,16 +199,9 @@ CSS custom
 /*==================================================================
  RESPONSIVE DESIGN Mobile & Tablet
 ====================================================================*/
-/*Narrower mobile*/
-@media (max-width:560px){
-    .about{
-        width:auto;
-    }
-}
-
-/*Mobile*/
-@media (max-width: 768px){
-	body {
+/*Tablets*/
+@media (max-width: 992px){
+    body {
         padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
         background-color: black;
         padding-bottom: 15px;
@@ -216,10 +209,68 @@ CSS custom
     }
 
     .ptitle{
-    	font-size: 80px;
+        font-size: 80px;
         line-height:85px;
         letter-spacing:-2pt;
         padding-top: 10px;
+    }
+
+    .navbar .navbar-nav > li > a {
+        font-size: 15px;
+    }
+
+    /*This CSS allows us to collapse navbar before default in bootstrap*/
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .navbar-header{
+        background-color: #333333;
+        opacity: 0.96;
+        height:40px;    
+    }
+
+}
+
+/*Mobile*/
+@media (max-width: 768px){
+    body {
+        padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
+        background-color: black;
+        padding-bottom: 15px;
+
+    }
+
+    .ptitle{
+        font-size: 75px;
+        line-height:85px;
+        letter-spacing:-2pt;
+        padding-top: 10px;
+    }
+
+    .pfast{
+       /* font-size: 55*/
     }
 
     .navbar-header{
@@ -296,58 +347,17 @@ CSS custom
 
 }
 
-/*Tablets*/
-@media (max-width: 992px){
-    body {
-        padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
-        background-color: black;
-        padding-bottom: 15px;
+/*Narrower mobile*/
+@media (max-width:560px){
+    .about{
+        width:auto;
+    }
+}
 
+@media (max-width:410px){
+    .pfast{
+        font-size: 55px;
     }
-
-    .ptitle{
-        font-size: 80px;
-        line-height:85px;
-        letter-spacing:-2pt;
-        padding-top: 10px;
-    }
-
-    .navbar .navbar-nav > li > a {
-        font-size: 15px;
-    }
-
-    /*This CSS allows us to collapse navbar before default in bootstrap*/
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    
-    .navbar-header{
-        background-color: #333333;
-        opacity: 0.96;
-        height:40px;    
-    }
-
 }
 
 
