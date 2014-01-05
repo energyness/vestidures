@@ -1,14 +1,3 @@
-$("#fbutt").mouseover(function(){
-  $("#fbutt").css("display","block");
-}); 
-
-$("#gbutt").mouseover(function(){
-  $("#gbutt").css("display","block");
-}); 
-
-$("#pbutt").mouseover(function(){
-  $("#pbutt").css("display","block");
-}); 
 //This function avoid wrong image position when loading the page
 var countdown = 5;
 setTimeout(function() {
