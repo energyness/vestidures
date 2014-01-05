@@ -1,4 +1,28 @@
-/*BUTTON FUNCTIONS*/
+
+//This function avoid wrong image position when loading the page
+var countdown = 5;
+setTimeout(function() {
+    
+    var img = $('<img id="note">'); //Equivalent: $(document.createElement('img'))
+    img.attr('src', './images/others/icona_music.png');
+    img.attr('style', 'margin-top:10px;');
+    
+
+    $('.music').append('Play soundtrack!'); 
+    img.appendTo('.not');
+
+    $('.paddp').css('display','inline'); 
+
+}, countdown);
+
+//Funció per canvia els titols quan fas hover sobre les imatges
+function changeText(text)
+{
+    var display = document.getElementById('m_title');
+    display.innerHTML = "";
+    display.innerHTML = text;
+}
+
 //Social buttons --> padding constant per mantenir el element fixe
 $(function() {        
     $("#share-buttons").floatingFixed({ padding: 130 });
@@ -8,8 +32,14 @@ $(function() {
     $(".social_act").floatingFixed({ padding: 130 });
 
   });
+$(function() { 
+
+    $(".social_phone").floatingFixed({ padding: $(window).height()-40});
+    
+  });
 
 //Permetre que els buttons horitzontals es possisionin de la mateixa manera respecte el discurs
+
 $(function() {
     var text = document.getElementsByClassName('texto2')[0]
 
@@ -27,47 +57,12 @@ $(function() {
     }
     else{
      $('.social_phoneH ').css('margin-top', n);
+
    }
 });
 
-function wait(button){
-  var countdown = 40000 //40 segons;
-  setTimeout(function() {
-    $(button).css('display','none');
-       
-
-  }, countdown);
-
-}
-
-/*IMAGE*/
-//This function avoid wrong image position when loading the page
-var countdown = 5;
-setTimeout(function() {
-    
-    var img = $('<img id="note">'); //Equivalent: $(document.createElement('img'))
-    img.attr('src', './images/others/icona_music.png');
-    img.attr('style', 'margin-top:10px;');
-    
-
-    $('.music').append('Play soundtrack!'); 
-    img.appendTo('.not');
-
-    $('.paddp').css('display','inline'); 
-
-}, countdown);
-
-/*TEXT*/
-//Funció per canvia els titols quan fas hover sobre les imatges
-function changeText(text)
-{
-    var display = document.getElementById('m_title');
-    display.innerHTML = "";
-    display.innerHTML = text;
-}
-
-
 /* SLIDER */
+
 $(function() {
 
     var target= $( "#slider-vertical" );
@@ -124,7 +119,6 @@ $(function() {
     
   });
 
-/*ZOOM*/
 window.onload = function(){zoom(1)} //crida a la funció només carregar la pàgina
 
 var img=document.getElementById("pic")
@@ -136,7 +130,7 @@ $(window).resize(function(){
         zoom(1); 
     });
 
-
+//ZOOM
 function zoom(zm) {
     img=document.getElementById("pic")
     wid=600
@@ -166,7 +160,16 @@ function zoom(zm) {
   
 }
 
-/*OTHER STUFF*/
+function wait(button, seg){
+  var countdown = 40000 //40 segons;
+  setTimeout(function() {
+    $(button).css('display','none');
+       
+
+  }, countdown);
+
+}
+
 //Fit elements
   w = $(window).width();
 
@@ -182,7 +185,7 @@ function zoom(zm) {
 
     });
 
-//Allow highlight button in mobile version --> simulate hover
+
 (function () {
   var count = 0;
 
