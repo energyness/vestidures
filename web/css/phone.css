@@ -127,19 +127,18 @@ CSS custom
 }
 
 .butH{
-    z-index:-2;
     width: 20%;
    
 }
 
 #pbuttH{
-    
 
 }
 
 #fbuttH{
     text-align: right;
     width: 40%;
+    z-index:200;
 }
 
 .gbuttH{
@@ -273,7 +272,7 @@ CSS custom
 
     .social_phoneH{
         width: auto;
-        
+
     }
     .butH{
         width: 33.3333%;
