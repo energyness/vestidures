@@ -560,10 +560,19 @@ CSS custom
     
 } 
 
+
+#disqus_thread{
+  margin-top: 60px;
+}
+
 /*==================================================================
  RESPONSIVE Smallers Desktops
 ====================================================================*/
-
+@media (min-width: 600px){
+   #disqus_thread{
+     width: 600px;
+   }
+ }
 @media (max-width: 1200px){
 /* CSS grid per les mandales en miniatura*/
 	#grid{
@@ -621,6 +630,7 @@ CSS custom
 		right: 280px;
 		top: 15px;
 	}
+
 }
 
 @media (max-width: 1085px){
