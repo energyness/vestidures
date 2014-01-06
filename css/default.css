@@ -1,44 +1,49 @@
-    /*==================================================================
-    CSS per defecte
-    ====================================================================*/
-    /*we set the font style we want*/
+/*==================================================================
+CSS DEFAULT
+====================================================================*/
+
+@font-face
+{
+font-family: "Fjalla";
+src: url('../fonts/FjallaOne-Regular.otf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
+
   @font-face
-    {
-    font-family: "Fjalla";
-    src: url('../fonts/FjallaOne-Regular.otf');
-        /*,url('Sansation_Light.eot'); /* IE9 */
-    }
+{
+font-family: "Arial2";
+src: url('../fonts/Arial.ttf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
 
-      @font-face
-    {
-    font-family: "Arial2";
-    src: url('../fonts/Arial.ttf');
-        /*,url('Sansation_Light.eot'); /* IE9 */
-    }
+  @font-face
+{
+font-family: "Arial Narrow2";
+src: url('../fonts/Arial-Narrow.ttf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
 
-      @font-face
-    {
-    font-family: "Arial Narrow2";
-    src: url('../fonts/Arial-Narrow.ttf');
-        /*,url('Sansation_Light.eot'); /* IE9 */
-    }
-
-    @font-face
-    {
-    font-family: "Times";
-    src: url('../fonts/times.ttf');
-        /*,url('Sansation_Light.eot'); /* IE9 */
-    }
+@font-face
+{
+font-family: "Times";
+src: url('../fonts/times.ttf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
 
 body {
-        padding-top: 100px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
         background-color: black;
+        padding-bottom: 10px;
 
       }
 
 li a{
 	color: white;
 
+}
+
+a{
+	color:#ffff47;
 }
 
 hr{
@@ -48,18 +53,18 @@ hr{
 }
 
 /*==================================================================
-    CSS classes Bootstrap
+CSS  Bootstrap classes modified
 ====================================================================*/
 
 
 .navbar{
 	 background-color: transparent;
-	 padding-top:10px;
+	 padding-top:20px;
 }
 
 .navbar .navbar-nav > li > a {
 	font-family: "Arial Narrow2";
-	font-size:12pt;
+	font-size:11pt;
 	font-weight: 100;
 
 }
@@ -88,64 +93,74 @@ hr{
 
 }
 
-#footer{
-	font-family: "Arial2";
-	font-weight: 300;
-	line-height: 8px;
+/*==================================================================
+CSS custom
+====================================================================*/
+/*Coming soon*/
+.soon{
+	font-size: 14pt;
+    line-height: 18pt;
+	font-family: "Times";
+	margin-bottom:7pt;
+	font-weight: 100;
+	color: white;
 	text-align: center;
-	font-size: 8pt;
-	color:#666666;
-	
-	
-	padding-bottom: 20px;
-
-
-	background: rgb(0,0,0);
-	background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(51,51,51,1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(60%,rgba(0,0,0,1)), color-stop(100%,rgba(51,51,51,1)));
-	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(51,51,51,1) 100%);
-	background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(51,51,51,1) 100%);
-	background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(51,51,51,1) 100%);
-	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 60%,rgba(51,51,51,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=0 );
+	margin-top: -20px;
 }
 
-
-#footer .ines{
-	color:white;
-}
-
-#footer .link_foot{
-	padding-top: 10px;
-}
-
-#footer a{
-	text-decoration: none;
-	color:#666666;
-}
-
-#footer a:hover{
+.soon a,
+.soon a:hover{
 	color: white;
 }
 
+#gif{
+	position: absolute;
+	margin: 0 auto;
+    left:0;
+    right:0;
+
+}
+
+#countdown{
+	font-size: 65px;
+	font-family: 'Arial Narrow2';
+	font-weight: 800;
+	color: white;
+	background-color: transparent;
+	text-align: center;
+
+}
 
 
+/* Pages navbar */
+.logo_V {
+	padding: 5px 5px;
+	margin-top: -12px;
+	margin-left: -8px;
+}
 
-/*==================================================================
-    CSS personalitzat
-====================================================================*/
-/* CSS barra navegació pagines */
-.navbar .navbar-nav > li > .pages:hover {
+.navbar .navbar-nav > li > .pages:hover,
+.navbar .navbar-nav > li > .pages:focus {
 	background-color: #ffff47;
 	color:black;
 }
 
-.active2 { /*Manté el color de la pagina on ens trobem*/
+.active2 { /*keep color within the page we are*/
 	 background-color: #ffff47;
 	 color:black;
 }
 
-/* CSS Barra navegació llengües */
+.pages2{
+	 color:white;
+	 opacity: 0.35;
+}
+
+.navbar .navbar-nav > li > .pages2:hover {
+	background-color: transparent;
+	color:white;
+}
+
+/* CSS Language navbar */
 .lang{
 	 color:#666666	;
 	 font-size: 12px;
@@ -163,14 +178,25 @@ hr{
 	color:white;
 }
 
-/* CSS grid per les mandales en miniatura*/
+.lang2{
+	 color:white	;
+	 font-size: 12px;
+	 padding: 5px;
+	 opacity: 0.35;
+}
+
+.navbar .navbar-nav > li > .lang2:hover {
+	background-color: transparent;
+	color:white;
+}
+/* Mandala's grid*/
 #grid{
-	margin-top: 150px;
+	margin-top: 170px;
     margin-bottom: 35px;
 
 }
 
-/*Centrar el GRID*/
+/*Center GRID*/
 .left{
 	z-index: 2;  /*Ens permet solapar els divs*/
 	margin-right: -90px;
@@ -187,16 +213,19 @@ hr{
 	margin-left: -90px;
 }
 
-/* CSS Títol gran intro i mandales */
+/* Title */
 .ptitle{ 
-	font-family: "Arial Narrow2";
-	font-weight:bold;
+	font-family: "Fjalla";
+	font-weight:100;
 	text-align: center;
-	font-size: 120px;
+	font-size: 130px;
 	color:white;
+	letter-spacing:-3pt;
 
 	z-index:100;
     position:absolute;
+
+    margin-top:20px;
 
     /*Ens centra el text quan té posició abasoluta*/
      left:0;
@@ -204,7 +233,7 @@ hr{
 
 }
 
-/*CSS Imatge Mandales*/
+/*Mandales images*/
 .image{
    
    width:600px;
@@ -217,32 +246,17 @@ hr{
 
 }
 
-/*CSS Imatge Manifest*/
-.image2{
-   position:absolute;
-   top: 15%;
-    margin: 0 auto;
-    left:0;
-    right:0;
-}
-
-
-.image_h{
-   padding-top: 20px;
-   margin-left: 31%;
-}
-
-/* CSS Textos intro i mandales*/
+/*Intro and mandales text */
 .texto_intro{
-	font-family: "Times";
-	font-style: italic;
+	font-family: "Arial2";
+	/*font-style: italic;*/
 	text-align:center; 
     color:white;
   
     width:650px;
     font-size: 12pt;
     line-height: 24pt;
-    font-weight: 100;
+    font-weight: 100 !important;
 
     margin: 0 auto;
     left:0;
@@ -280,7 +294,7 @@ hr{
 	margin-bottom:10pt;
 }
 
-/*CSS about, agraiments, contacte */
+/*About, Agraiments, Contacte */
 
 .about {
 	background-color: transparent;
@@ -293,7 +307,7 @@ hr{
     right:0;
 
     width:500px;
-    margin-top:30px;
+    margin-top:45px;
 }
 
 .about p{
@@ -306,49 +320,18 @@ hr{
 }
 
  .about .mayus{
- 		
+    font-weight: bold;
  	font-size: 20pt;
  }
 
-.about a,
-.about a:hover{
+.about .gr{
 	text-decoration: underline;
 	color:white;
 }
 
-.about .gr,
 .about .gr:hover{
-	text-decoration: underline;
-	color:#808080;
+	color:#ffff47;
 }
-
-
-/*CSS Manifest */
-
-#think{
-	font-family: "Arial2";
-	text-align: center;
-	color:white;
-	  font-size: 20pt;
-	  letter-spacing:4px;
-
-	  padding-top: 15px;
-	   margin-left: 2%;
-
-}
-
-#tumblr{
-	font-family: "Arial2";
-	text-align: center;
-	color:white;
-	font-size: 17pt;
-
-	 padding-top: 15px;
-	 margin-left: 2%;
-	  text-decoration:underline;
-
-}
-
 
 /* CSS SOCIAL BUTTONS*/
 /*VERTICALS*/
@@ -377,10 +360,7 @@ hr{
 	
 	background-color: transparent;
 	left:60px;
-
-
-
-	
+	z-index:2000;
 }
 
 .social_act div{
@@ -396,13 +376,13 @@ hr{
 
 .social_act .fb{
 		
-	margin-top: 11px;
+	margin-top: -300px; /*11px*/
 	padding-left: 10px;
+	display:block;
 
 }
 
 .social_act .pin{
-		
 	margin-top: 86px;
 	padding-left: 10px;
 	
@@ -415,79 +395,14 @@ hr{
 }
 
 /*HORITZONTALS*/
-.social_actH{
-	background-color: transparent;
-	margin:0 auto;
-	left:0;
-	right:0;
-	
-}
-
-.social_actH div{
-	background-color: transparent;
-	height: 30px;
-	padding: 1px;
-	display: none;
-	position: absolute;
-	z-index: 152;
-
-}
-
-.social_actH .google-buttonH{
-	width:43px;
-	padding-top: 8px;
-	margin-left: 525px;
-
-}
-
-
-.social_actH .fbH{
-	padding-top: 10px;
-	margin-left: 455px;
-		
-
-}
-
-.social_actH .pinH{
-	padding-top: 10px;
-	margin-left: 583px;	
-
-	
-}
-
-.share-buttons_h{
-	margin: 0 auto;
-	left: 0;
-	right:0; 
-	margin-left:502px;
-
-}
-
-.share-buttons_h .padd{
-  margin-left:-3px;
-}
-
-
-#share-buttons_h2{
-	
-	padding-top: 40px;
-	left: 0;
-	right:0; 
-	text-align:center;
- 
-}
-
-#share-buttons_h2 a{
-	width: 35px;
-	padding: 25px;
-}
+/*Same as phone social buttons*/
 
 /* Footer gradient */
 .myhr{
 	
 	border: 0; 
 	width:100%;
-	height: 1.5px; 
+	height: 1px; 
 	text-align: center; 
 	background: rgb(0,0,0);
 	background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(51,51,51,1) 40%, rgba(96,96,96,1) 50%, rgba(51,51,51,1) 60%, rgba(0,0,0,1) 100%);
@@ -500,6 +415,52 @@ hr{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
 }
 
+/* Footer */
+#footer{
+	
+	font-weight: 300;
+	line-height: 10px;
+	text-align: center;
+	letter-spacing: 0.2pt;
+
+	color:#666666;
+	
+	padding-bottom: 20px;
+}
+
+
+#footer .ines{
+	color:white;
+	font-family: "Trebuchet";
+	font-weight: 100;
+	font-size: 11pt;
+	font-style: italic;
+}
+
+#footer .power{
+	font-family: "Trebuchet";
+	font-weight: 100;
+	font-style: italic;
+	color: #808080;
+	font-size: 11pt;
+}
+
+#footer .link_foot{
+	padding-top: 15px;
+	color:#3d3d3d;
+
+}
+
+#footer a{
+	font-family: "Arial Narrow2";
+	font-size: 12pt;
+	text-decoration: none;
+	color:#3d3d3d;
+}
+
+#footer a:hover{
+	color: #ffff47;
+}
 
 /* CSS Music player */
 .music{
@@ -525,7 +486,7 @@ hr{
 
 .navbar .navbar-nav img {
 	position:absolute;
-	right: 263px;
+	right: 327px;
 	top: 17px;
 }
 
@@ -602,5 +563,94 @@ hr{
     height: 100%;  
     
 } 
+
+
+#disqus_thread{
+  margin-top: 60px;
+}
+
+.publisher-anchor-color a {
+    color: #ffff47 !important;
+}
+
+/*==================================================================
+ RESPONSIVE Smallers Desktops
+====================================================================*/
+@media (min-width: 600px){
+   #disqus_thread{
+     width: 600px;
+   }
+ }
+@media (max-width: 1200px){
+/* CSS grid per les mandales en miniatura*/
+	#grid{
+		margin-top: 170px;
+	    margin-bottom: 35px;
+
+	}
+
+	/*Centrar el GRID*/
+	.left{
+		z-index: 2;  /*Ens permet solapar els divs*/
+		margin-right: -30px;
+		margin-left: 30px;
+	}
+
+	.center{
+		z-index:1;
+
+	}
+
+	.right{
+		z-index:2;
+		margin-left: -30px;
+	}
+
+	.navbar .navbar-nav > li > a {
+		font-size:11pt;
+
+	}
+
+	.navbar-nav > li > a
+	{
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  padding-left: 5px;
+	  padding-right:5px;
+	  line-height: 5px;
+	}
+
+	.lang{
+		 color:#666666	;
+		 font-size: 12px;
+		 padding: 2.5px;
+	}
+
+	.music{
+
+	font-size: 8px;
+	 padding: 2.5px;
+
+	}
+
+
+	.navbar .navbar-nav img {
+		right: 280px;
+		top: 15px;
+	}
+
+}
+
+@media (max-width: 1085px){
+		.navbar .navbar-nav > li > a {
+		font-size:10pt;
+
+	}
+		.navbar .navbar-nav img {
+		right: 270px;
+		top: 15px;
+	}
+
+	}
 
 
