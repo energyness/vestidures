@@ -39,10 +39,17 @@ $(function() {
 
     $(window).resize(function(){
         w = $(window).width(); // get new width after change
+            if(w < 992 ){
+        $('.social_phoneH ').css('margin-top', '20px');
+        }
+        else{
+         $('.social_phoneH ').css('margin-top', n);
+
+       }
         
     });
 
-    if(w < 768 ){
+    if(w < 992 ){
         $('.social_phoneH ').css('margin-top', '20px');
     }
     else{

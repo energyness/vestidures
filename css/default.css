@@ -567,6 +567,11 @@ CSS custom
 
 #disqus_thread{
   margin-top: 60px;
+  width: auto;
+}
+
+.prova{
+	width: auto;
 }
 
 .publisher-anchor-color a {
