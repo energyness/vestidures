@@ -567,7 +567,7 @@ CSS custom
 
 #disqus_thread{
   margin-top: 60px;
-  width: auto;
+  width: 320px;
 }
 
 .prova{
@@ -584,6 +584,12 @@ CSS custom
 @media (min-width: 600px){
    #disqus_thread{
      width: 600px;
+   }
+ }
+
+ @media (min-width: 400px) and (max-width: 599px){
+   #disqus_thread{
+     width: 400px;
    }
  }
 @media (max-width: 1200px){
