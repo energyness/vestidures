@@ -566,6 +566,9 @@ CSS custom
 
 
 #disqus_thread{
+  margin: 0 auto;
+  left:0;
+  right:0;	
   margin-top: 60px;
   width: 320px;
 }
