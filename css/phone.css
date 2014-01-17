@@ -72,6 +72,20 @@ CSS  Bootstrap classes modified
 CSS custom
 ====================================================================*/
 /* Text */
+
+.poweredBy{
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 28px;
+    font-family: "Trebuchet";
+    color:#3d3d3d;
+    margin-top: -10px;
+    margin-bottom: -10px;
+
+
+}
+
 #intext{
     background-color: transparent;
     font-family: "Arial2";
@@ -95,6 +109,7 @@ CSS custom
     line-height: 18pt;
 
 }
+
 
 /*Entry to the website*/
 
@@ -121,7 +136,7 @@ CSS custom
 /* Social buttons*/
 .social_phoneH{
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width:500px;
    
 }
@@ -345,6 +360,26 @@ CSS custom
        width: 33.3333%;
     }
 
+    .principis{
+        width:auto;
+        padding-left: 10px; 
+        background-color: white;
+          margin-bottom: 155px;
+    }
+
+    .principis div p{
+        text-align:center;
+    }
+    
+    .principis div img{
+        position: absolute;
+        margin: 0 auto;
+        left:0;
+        right:0;
+        float:none;
+
+    }
+
 }
 
 /*Narrower mobile*/
@@ -352,11 +387,18 @@ CSS custom
     .about{
         width:auto;
     }
+
 }
 
 @media (max-width:410px){
     .pfast{
         font-size: 55px;
+    }
+}
+
+@media (max-width:320px){
+    .principis div p{
+        font-size: 25px;
     }
 }
 

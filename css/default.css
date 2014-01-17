@@ -573,17 +573,51 @@ CSS custom
     color: #ffff47 !important;
 }
 
+/*White DIV*/
+
+.whiteD{
+    background-color: white;
+
+}
+
+.principis{
+	width:550px;
+	font-size: 30px;
+	font-family: 'Fjalla';
+	background-color: white;
+	margin-bottom: 10px;
+	padding-left: 30px; 
+}
+
+.principis div p{
+	padding-top: 40px;
+	color:black;
+	
+}
+
+.principis div img{
+	
+	float:left;
+}
+
+.myhrD{
+	width:320px;
+	color:#808080;
+}
+
 /*==================================================================
  RESPONSIVE Smallers Desktops
 ====================================================================*/
 @media (min-width: 600px){
-   #disqus_thread{
+   #disqus_thread,
+   .myhrD{
      width: 600px;
    }
  }
 
  @media (min-width: 400px) and (max-width: 599px){
-   #disqus_thread{
+   #disqus_thread,
+   .myhrD{
      width: 400px;
    }
  }
