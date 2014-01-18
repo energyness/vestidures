@@ -1,6 +1,6 @@
 /* Coming soon countdown*/
 var newYear = new Date(); 
-newYear = new Date(2014 , 1 - 1, 7); 
+newYear = new Date(2014 , 1 - 1, 21); 
 $('#countdown').countdown({until: newYear,
 layout:'{dnn}:{hnn}:{mnn}:{snn}'});
 
