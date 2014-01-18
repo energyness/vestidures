@@ -33,18 +33,18 @@ $(function() {
 $(function() {
     var text = document.getElementsByClassName('texto2')[0]
 
-    var n=  text.offsetHeight + 525;
+    var n=  text.offsetHeight + 555;
 
     w = $(window).width();
 
     $(window).resize(function(){
         w = $(window).width(); // get new width after change
             if(w < 992 ){
-        $('.principis').css('margin-top', '20px');      
+        $('.arroW').css('margin-top', '60px');      
         
         }
         else{
-         $('.principis').css('margin-top', n);  
+         $('.arroW').css('margin-top', n);  
          
 
        }
@@ -52,11 +52,11 @@ $(function() {
     });
 
     if(w < 992 ){
-        $('.principis').css('margin-top', '20px'); 
+        $('.arroW').css('margin-top', '60px'); 
         
     }
     else{
-    $('.principis').css('margin-top', n); 
+    $('.arroW').css('margin-top', n); 
      
 
    }

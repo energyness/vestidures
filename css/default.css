@@ -577,6 +577,9 @@ CSS custom
 
 .whiteD{
     background-color: white;
+    z-index: 5000;
+    position:relative;
+
 
 }
 
@@ -585,7 +588,8 @@ CSS custom
 	font-size: 30px;
 	font-family: 'Fjalla';
 	background-color: white;
-	margin-bottom: 10px;
+	margin-top: 80px;
+	margin-bottom: 35px;
 	padding-left: 30px; 
 }
 
@@ -603,6 +607,32 @@ CSS custom
 .myhrD{
 	width:320px;
 	color:#808080;
+}
+
+.likeB{
+	float:left;
+	margin-top: 130px;
+	margin-left: 3px;
+	position: absolute !important;
+	z-index: 100;
+
+}
+
+.arrow img{
+	position: absolute;
+	margin: 0 auto;
+    left:0;
+    right:0;
+    margin-bottom: 20px;
+}
+
+.arroW img{
+	position: absolute;
+	margin: 0 auto;
+    left:0;
+    right:0;
+    margin-top: -35px;
+    
 }
 
 /*==================================================================
