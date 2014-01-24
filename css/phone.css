@@ -138,7 +138,6 @@ CSS custom
     margin-top: 20px;
     margin-bottom: 20px;
     width:500px;
-   
 }
 
 .butH{
@@ -171,6 +170,13 @@ CSS custom
 #yey .active2{
     color:black;
     background-color: #ffff47;
+}
+
+
+ .navbar .navbar-nav > li > .asterisco:hover,
+ .asterisco:focus{
+    background-color: white !important; 
+    color:black !important; 
 }
 
 /*Collapse button*/
@@ -209,6 +215,11 @@ CSS custom
 .myhrP{
     color:#808080;
     width: auto;
+}
+
+/* Facebook & Blog Vestidures */
+.m_social{
+ margin-bottom:55px;
 }
 
 /*==================================================================
@@ -264,6 +275,11 @@ CSS custom
         background-color: #333333;
         opacity: 0.96;
         height:40px;    
+    }
+    
+    .navbar-fixed-top {
+        position:absolute;
+        margin-top:0px;
     }
 
 }
@@ -364,7 +380,7 @@ CSS custom
         width:auto;
         padding-left: 10px; 
         background-color: white;
-        margin-bottom: 155px;
+        margin-bottom: 60px;
 
     }
 
@@ -396,7 +412,35 @@ CSS custom
         margin-top: -20px;
         
     }
+    
+    .textoV{
+        width:auto;
+        font-size:15pt;
+        margin-top: 20px;
+    }
+    
+    .introV{
+        font-size:20pt;
+        line-height:20pt
+    }
+    
+    .imgV{
+        padding-top: 30px;
+    }
 
+    .man{
+        padding-top:128px;
+        font-size: 14px;
+        line-height: 12pt;
+        text-align: center;
+        font-family:'Rosario';
+    
+    }
+    
+    .principis div a img{
+        margin-top: 0px;
+    }
+    
 }
 
 /*Narrower mobile*/
@@ -423,7 +467,16 @@ CSS custom
         
 
     }
+    
+    .principis .man p{
+        padding-top:13px;
+        font-size: 14px;
+        line-height: 12pt;
+        text-align: center;
+    
+    }
 }
+
 
 
 

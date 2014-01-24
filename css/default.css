@@ -50,6 +50,8 @@ a{
 	color:#ffff47;
 }
 
+
+
 hr{
 	margin-top: 40px;
 	width:450px;
@@ -148,6 +150,11 @@ CSS custom
 	background-color: #ffff47;
 	color:black;
 }
+
+/*.navbar .navbar-nav > li > a:visited
+{
+  color:yellow !important;
+}*/
 
 .active2 { /*keep color within the page we are*/
 	 background-color: #ffff47;
@@ -639,6 +646,90 @@ CSS custom
     
 }
 
+/* VESTIDURES */
+
+.textoV{
+    background-color: transparent;
+	font-family: "Arial2";
+	text-align:center; 
+    font-size: 14pt;
+    font-weight: 100;
+    line-height: 20pt;
+
+    
+    margin: 0 auto;
+    left:0;
+    right:0;
+    
+    margin-top:50px;
+  
+    
+    width:500px;
+}
+
+.textoV p{
+    color:black;
+}
+
+.imgV {
+  padding-top: 50px;
+}
+
+.boxV {
+    top:30px;
+}
+
+.introV {
+    background-color: transparent;
+	font-family: "Arial2";
+	text-align:center; 
+    font-size: 34pt;
+    font-weight: 100;
+    line-height: 40pt;
+}
+
+/*Principis*/
+.imgP img{
+    width:100%;
+     margin-left: -40px;
+}
+
+.textP {
+    width:320px;
+    font-size:28px;
+    margin-left: -80px;
+    line-height: 23pt;
+    
+}
+
+.textP .man{
+    padding-top:0px;
+    font-size: 14px;
+    line-height: 12pt;
+    text-align: left;
+    font-family:'Rosario';
+}
+
+.textP a img{
+    margin-left: -3px;
+}
+
+.col-xs-6 img{
+    width:140px;
+    
+}
+
+/*Fake tumbler*/
+.fakeT{
+	float:left;
+	margin-top: 430px;
+	margin-left: 0px;
+	position: absolute !important;
+	z-index: 200;
+    top:30px;
+}
+
+
 /*==================================================================
  RESPONSIVE Smallers Desktops
 ====================================================================*/
@@ -725,6 +816,11 @@ CSS custom
 		top: 15px;
 	}
 
-	}
+}
+
+
+
+
+
 
 
