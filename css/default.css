@@ -30,6 +30,14 @@ src: url('../fonts/times.ttf');
     /*,url('Sansation_Light.eot'); /* IE9 */
 }
 
+@font-face
+{
+font-family: "National";
+src: url('../fonts/National-Regular.otf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
+
+
 body {
         padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
         background-color: black;
@@ -683,6 +691,7 @@ CSS custom
 /*Principis*/
 .imgP{
     margin-top: 20px;
+    padding-left: 60px;
 }
 .imgP img{
     width:80%;
@@ -702,7 +711,7 @@ CSS custom
     font-size: 14px;
     line-height: 12pt;
     text-align: left;
-    font-family:'rosario';
+    font-family:'National';
 }
 
 .textP a img{
@@ -836,7 +845,7 @@ CSS custom
 .pn img{
     width:35%;
     margin-left:-10px;
-    margin-top: -25px
+    margin-top: 5px
 
 }
 
@@ -854,4 +863,7 @@ CSS custom
 
 .iii {
     width:150px !important;
+    
 }
+
+
