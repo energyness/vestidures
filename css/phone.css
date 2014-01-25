@@ -517,8 +517,7 @@ CSS custom
 .background-fb {
     
     background-image: url('../images/buttons/share_facebook-09.png');
-    background-repeat:no-repeat;
-    background-position:center; 
+
 }
 
 .background-tw {
@@ -527,7 +526,12 @@ CSS custom
 }
 
 .shNav {
-    height:43px;  
+    height:25px;
+    margin-right: 10%;
+    margin-left:10%;
+    background-repeat:no-repeat;
+    background-position:center; 
+    
 }
 
 
@@ -548,9 +552,12 @@ CSS custom
 }
 
 .imgSh {
-    width:100%;
+    width:235px;
     left: 0px;
     margin-top:-15px;
+    margin-right: 25%;
+    margin-left:5%;
+    
 }
 
 .mprev {
