@@ -50,8 +50,6 @@ a{
 	color:#ffff47;
 }
 
-
-
 hr{
 	margin-top: 40px;
 	width:450px;
@@ -581,7 +579,7 @@ CSS custom
 }
 
 .publisher-anchor-color a {
-    color: #ffff47 !important;
+    color: #524196 !important;
 }
 
 /*White DIV*/
@@ -621,12 +619,11 @@ CSS custom
 }
 
 .likeB{
-	float:left;
-	margin-top: 130px;
-	margin-left: 3px;
-	position: absolute !important;
-	z-index: 100;
-
+    float:left;
+    margin-top: 130px;
+    margin-left: 3px;
+    position: absolute !important;
+    z-index: 100;
 }
 
 .arrow img{
@@ -675,9 +672,7 @@ CSS custom
   padding-top: 50px;
 }
 
-.boxV {
-    top:30px;
-}
+
 
 .introV {
     background-color: transparent;
@@ -721,11 +716,11 @@ CSS custom
 
 /*Fake tumbler*/
 .fakeT{
-	float:left;
-	margin-top: 430px;
-	margin-left: 0px;
-	position: absolute !important;
-	z-index: 200;
+    float:left;
+    margin-top: 400px;
+    margin-left: 3px;
+    position: absolute !important;
+    z-index: 200;
     top:30px;
 }
 
@@ -818,9 +813,22 @@ CSS custom
 
 }
 
+.navbar-collapse {
+    -webkit-box-shadow: 2px 5px 8px 0px rgba(50, 50, 50, 0.8) !important;
+    -moz-box-shadow:    2px 5px 8px 0px rgba(50, 50, 50, 0.8) !important;
+    box-shadow:         2px 5px 8px 0px rgba(50, 50, 50, 0.8) !important;
+}
+.fixB {
+    width: 200px;
+    height:300px;
+	top:130px;
+	position: absolute; 
+	
+	background-color: transparent;
+	left:3px;
+	
+}
 
-
-
-
-
-
+.cc {
+    color:black;
+}

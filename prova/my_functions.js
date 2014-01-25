@@ -29,6 +29,11 @@ $(function() {
 
   });
 
+$(function() {        
+    $(".fixB").floatingFixed({ padding: 130 });
+
+  });
+
 //Allow rigth horizontal buttons positioning 
 $(function() {
     var text = document.getElementsByClassName('texto2')[0]
@@ -38,7 +43,7 @@ $(function() {
     w = $(window).width();
 
     $(window).resize(function(){
-        w = $(window).width(); // get new width after change
+            w = $(window).width(); // get new width after change
             if(w < 992 ){
         $('.arroW').css('margin-top', '60px');      
         
@@ -195,32 +200,69 @@ $('.terra').css('margin-top', h-500);
 //Simulate hover on mobile 
 (function () {
   var count = 0;
+  var count2 = 0; 
 
   $('.btn-custom').click(function () {
     count += 1;
-    if (count%2==0) {
+    if (count%2==0) { 
       $(this).removeClass("btn-background-hov");
       $(this).addClass("btn-background");
+       
     }
     else{
       $(this).removeClass("btn-background");
       $(this).addClass("btn-background-hov");
+        /*$('#yey').show();
+        
+            if (count2%2!=0){
+                 $('#yeyS').hide();
+                 $('.btn-custom2').removeClass("btn-background-hov2");
+                 $('.btn-custom2').addClass("btn-background2");
+                 count2 +=1 
+            }*/
+        
     }
+  });
+    
+    $('.btn-custom2').click(function () {
+        count2 += 1;
+        if (count2%2==0) {
+          $(this).removeClass("btn-background-hov2");
+          $(this).addClass("btn-background2");
+    
+        }
+        else{
+          $(this).removeClass("btn-background2");
+          $(this).addClass("btn-background-hov2");
+             /*$('#yeyS').show();
+            if (count%2!=0){
+                 $('#yey').hide();
+                 $('.btn-custom').removeClass("btn-background-hov");
+                 $('.btn-custom').addClass("btn-background");
+                 count +=1 
+            }*/
+        }
+        
+        
+        
+    
   });
 })();
 
+
+
+$(document).ready(function() {
+  $('#eng').tooltip();
+});
+
+
 /*NOT USED */
 //Funció per canvia els textos quan fas click sobre idioma seleccionat (mobile version)
-function changeTextM(text, enter)
+function changeTextM(text)
 {
-    var display = document.getElementById('intext');
+    var display = document.getElementById('eng')[0];
     display.innerHTML = "";
     display.innerHTML = text;
-
-    var display = document.getElementById('enter2');
-    display.innerHTML = "";
-    display.innerHTML = enter;
-
 
 }
 //We select a language and the button 'Go' get the desired url for the language

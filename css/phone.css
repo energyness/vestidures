@@ -199,6 +199,14 @@ CSS custom
     background-image: url('../images/buttons/btn-click.png');
 }
 
+.btn-background2{
+    background-image: url('../images/buttons/sharebutton.png');
+}
+
+.btn-background-hov2{
+    background-image: url('../images/buttons/sharebutton_click2.png');
+}
+
 /*Button next navbar collapse*/
 
 .next2,
@@ -481,3 +489,71 @@ CSS custom
 
 
 
+
+.btn-custom2 {
+    float:right;
+    background-color: transparent;
+    border: 1px solid transparent;
+    background-size: 100%;
+    border-radius: 0;
+    width:40px;
+    height: 40px;
+    border: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+
+.btn-background2 {
+    background-image: url('../images/buttons/sharebutton.png');
+    
+}
+
+.background-fb {
+    
+    background-image: url('../images/buttons/share_facebook-09.png');
+    background-repeat:no-repeat;
+    background-position:center; 
+}
+
+.background-tw {
+    background-image: url('../images/buttons/share_twitter-10.png');
+
+}
+
+.shNav {
+    height:43px;
+
+      /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+    
+    
+    
+}
+
+
+.background-pin {
+    background-image: url('../images/buttons/share_pinterest-11.png');
+}
+
+.background-g {
+    background-image: url('../images/buttons/share_google-12.png');
+}
+
+.background-tb {
+    background-image: url('../images/buttons/share_tumblr-13.png');
+}
+
+.background-e {
+    background-image: url('../images/buttons/share_emilio-14.png');
+}
+
+.imgSh {
+    height:45px;
+    width:100%;
+    left: 0px;
+    margin-top:-15px;
+}
