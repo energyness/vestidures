@@ -389,13 +389,13 @@ CSS custom
 }
 
 .social_act .pin{
-	margin-top: 86px;
+	margin-top: 126px;
 	padding-left: 10px;
 	
 }
 
 .google-button{
-	margin-top: 47px;
+	margin-top: 87px;
 
 	
 }
@@ -681,9 +681,12 @@ CSS custom
 }
 
 /*Principis*/
+.imgP{
+    margin-top: 20px;
+}
 .imgP img{
-    width:100%;
-     margin-left: -40px;
+    width:80%;
+    margin-left: -10px;
 }
 
 .textP {
@@ -828,4 +831,21 @@ CSS custom
 
 .cc {
     color:black;
+}
+
+.pn img{
+    width:35%;
+    margin-left:-10px;
+    margin-top: -25px
+
+}
+
+.prevP {
+    left: 60px;
+}
+
+.social_act .twitter-button {
+    margin-top: 47px;
+    padding-left: 10px;
+    
 }

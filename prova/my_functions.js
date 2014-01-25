@@ -1,6 +1,10 @@
 /*==================================================================
 MY JS Functions
 ====================================================================*/
+$(document).ready(function() {
+  $('#eng').tooltip();
+  $('#eusk').tooltip();
+});
 //This functions allows the like button to not dissapear if diplay:none from the beggining
 setTimeout(function() {
     
@@ -251,9 +255,7 @@ $('.terra').css('margin-top', h-500);
 
 
 
-$(document).ready(function() {
-  $('#eng').tooltip();
-});
+
 
 
 /*NOT USED */
