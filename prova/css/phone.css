@@ -1,0 +1,597 @@
+/*==================================================================
+CSS mobile version
+====================================================================*/
+
+/*==================================================================
+CSS  Bootstrap classes modified
+====================================================================*/
+.item{
+    margin: 0 auto;
+    left:0;
+    right:0;
+}
+
+.item img {
+    margin: 0 auto;
+    left:0;
+    right:0;
+}
+
+.carousel-inner{
+    margin-top: 90px;
+}
+
+
+.select{
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.navbar-default{
+    border-color: transparent;
+    background-color: transparent;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    z-index: 1050;
+
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 20px;
+    z-index:1050;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-collapse.in {
+    background-color: white;
+}
+
+.collapsing {
+  background-color: white;
+}
+
+.carousel .item {-webkit-transition: opacity 0s; -moz-transition: opacity 0s; -ms-transition: opacity 0s; -o-transition: opacity 0s; transition: opacity 0s;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/*==================================================================
+CSS custom
+====================================================================*/
+/* Text */
+
+.poweredBy{
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 28px;
+    font-family: "Trebuchet";
+    color:#3d3d3d;
+    margin-top: -10px;
+    margin-bottom: -10px;
+
+
+}
+
+#intext{
+    background-color: transparent;
+    font-family: "Arial2";
+    text-align:center; 
+    color:white;
+
+    font-size: 13pt;
+    font-weight: 100;
+    line-height: 18pt;
+
+}
+
+.mtext{
+	background-color: transparent;
+	font-family: "Arial2";
+	text-align:center; 
+    color:white;
+
+    font-size: 13pt;
+    font-weight: 100;
+    line-height: 18pt;
+
+}
+
+
+/*Entry to the website*/
+
+.enter{
+	margin-top: 10px;
+}
+
+.go,
+.go:hover{
+    color:#ffff47;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/*Link zoom*/
+.zoomP,
+.zoomP a{
+    color:white;
+    text-align: right;
+    text-decoration: underline;
+    margin-bottom: 0px;
+    margin-top: -15px;
+}
+/* Social buttons*/
+.social_phoneH{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width:500px;
+    padding-left: 20px;
+}
+
+.butH{
+   /* width: 20%;*/
+   
+}
+
+#pbuttH{
+
+}
+
+#fbuttH{
+    text-align: right;
+   /* width: 40%;*/
+    z-index:200;
+}
+
+.gbuttH{
+   /*text-align: left;*/
+   
+}
+
+/* Collapse menu dropdown*/
+#yey a{
+    color:black;
+    background-color: white;
+}
+
+#yey a:hover,
+#yey .active2{
+    color:black;
+    background-color: #ffff47;
+}
+
+
+ .navbar .navbar-nav > li > .asterisco:hover,
+ .asterisco:focus{
+    background-color: white !important; 
+    color:black !important; 
+}
+
+/*Collapse button*/
+.btn-custom{
+    background-size: 100%;
+    border-radius: 0;
+    width:40px;
+    height: 40px;
+    border: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: absolute;
+}
+
+.btn-background{
+    background-image: url('../images/buttons/btn_menu.png');
+}
+
+.btn-background-hov{
+    background-image: url('../images/buttons/btn-click.png');
+}
+
+.btn-background2{
+    background-image: url('../images/buttons/sharebutton.png');
+}
+
+.btn-background-hov2{
+    background-image: url('../images/buttons/sharebutton_click2.png');
+}
+
+/*Button next navbar collapse*/
+
+.next2,
+.next2:hover{
+    float:right;
+    color:#ffff47;
+    text-decoration: underline;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+/*Hr mobile version*/
+.myhrP{
+    color:#808080;
+    width: auto;
+}
+
+/* Facebook & Blog Vestidures */
+.m_social{
+ margin-bottom:15px;
+}
+
+/*==================================================================
+ RESPONSIVE DESIGN Mobile & Tablet
+====================================================================*/
+/*Tablets*/
+@media (max-width: 992px){
+    body {
+        padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
+        background-color: black;
+        padding-bottom: 15px;
+
+    }
+
+    .ptitle{
+        font-size: 80px;
+        line-height:85px;
+        letter-spacing:-2pt;
+        padding-top: 10px;
+    }
+
+    .navbar .navbar-nav > li > a {
+        font-size: 15px;
+    }
+
+    /*This CSS allows us to collapse navbar before default in bootstrap*/
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .navbar-header{
+        background-color: #333333;
+        opacity: 0.96;
+        height:40px;    
+    }
+    
+    .navbar-fixed-top {
+        position:absolute;
+        margin-top:0px;
+    }
+
+}
+
+/*Mobile*/
+@media (max-width: 768px){
+    body {
+        padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
+        background-color: black;
+        padding-bottom: 15px;
+
+    }
+
+    .ptitle{
+        font-size: 75px;
+        line-height:85px;
+        letter-spacing:-2pt;
+        padding-top: 10px;
+    }
+
+    .pfast{
+       /* font-size: 55*/
+    }
+
+    .navbar-header{
+        background-color: #333333;
+        opacity: 0.96;
+        height:40px;
+        
+    }
+
+    #footer{
+        text-align: left;
+
+    }
+
+    #footer .ines{
+        color:#606060;
+        font-family: "Trebuchet";
+        font-weight: 100;
+        font-size: 11pt;
+        font-style: normal;
+    }
+
+    #footer .power{
+        font-family: "Trebuchet";
+        color: #606060;
+        font-style: normal;
+
+    }
+
+    #footer .link_foot{
+        color:#999999;
+
+    }
+
+    #footer a{
+        font-family: "Trebuchet";
+        font-size: 11pt;
+        color:#999999;
+        text-decoration: none;
+
+    }
+
+    #footer a:hover{
+        color: #ffff47;
+    }
+
+    .navbar .navbar-nav > li > a {
+        font-size: 15px;
+    }
+
+    .social_phoneH{
+        width: auto;
+        padding-top:20px ;
+        margin-bottom: 10px;
+    }
+    .butH{
+        /*width: 33.3333%;*/
+        
+   
+    }
+
+    #pbuttH{
+        text-align: right;
+        padding-right: 80px;
+        margin-top: 10px;
+        
+    }
+
+    #fbuttH{
+        text-align: right;
+        
+    }
+
+    .gbuttH{
+       text-align: left;
+       /*width: 33.3333%;*/
+        margin-top: 10px;
+    }
+
+    .principis{
+        width:auto;
+        padding-left: 10px; 
+        background-color: white;
+        margin-bottom: 60px;
+        line-height: 23pt;
+        
+
+    }
+
+    .principis div p{
+        text-align:center;
+        padding-top: 0px;
+    }
+    
+    .principis div img{
+        position: absolute;
+        margin: 0 auto;
+        left:0;
+        right:0;
+        float:none;
+        margin-top: -20px;
+        
+
+    }
+
+    .arrow{
+        margin-bottom: -30px;
+    }
+
+    .arroW img{
+        position: absolute;
+        margin: 0 auto;
+        left:0;
+        right:0;
+        margin-top: -20px;
+        
+    }
+    
+    .textoV{
+        width:auto;
+        font-size:15pt;
+        margin-top: 20px;
+    }
+    
+    .introV{
+        font-size:20pt;
+        line-height:20pt
+    }
+    
+    .imgV{
+        padding-top: 30px;
+    }
+
+    .man{
+        padding-top:128px;
+        font-size: 14px;
+        line-height: 12pt;
+        text-align: center;
+    
+    }
+    
+    .principis div a img{
+        margin-top: 0px;
+    }
+    
+}
+
+/*Narrower mobile*/
+@media (max-width:560px){
+    .about{
+        width:auto;
+    }
+
+}
+
+@media (max-width:410px){
+    .pfast{
+        font-size: 55px;
+    }
+}
+
+@media (max-width:320px){
+    .principis div p{
+        font-size: 25px;
+    }
+
+    .principis div img{
+        margin-top: -10px;
+        
+
+    }
+    
+    .principis .man p{
+        padding-top:13px;
+        font-size: 14px;
+        line-height: 12pt;
+        text-align: center;
+    
+    }
+}
+
+
+
+
+
+
+.btn-custom2 {
+    float:right;
+    background-color: transparent;
+    border: 1px solid transparent;
+    background-size: 100%;
+    border-radius: 0;
+    width:40px;
+    height: 40px;
+    border: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+
+.btn-background2 {
+    background-image: url('../images/buttons/sharebutton.png');
+    
+}
+
+.background-fb {
+    
+    background-image: url('../images/buttons/share_facebook-09.png');
+
+}
+
+.background-tw {
+    background-image: url('../images/buttons/share_twitter-10.png');
+
+}
+
+.shNav {
+    height:45px;
+    margin-right: 1%;
+    margin-left:1%;
+    background-repeat:no-repeat;
+    background-position:center; 
+     background-size: 315px;
+   
+}
+
+
+.background-pin {
+    background-image: url('../images/buttons/share_pinterest-11.png');
+}
+
+.background-g {
+    background-image: url('../images/buttons/share_google-12.png');
+}
+
+.background-tb {
+    background-image: url('../images/buttons/share_tumblr-13.png');
+}
+
+.background-e {
+    background-image: url('../images/buttons/share_emilio-14.png');
+}
+
+.imgSh {
+    width:235px;
+    left: 0px;
+    margin-top:-15px;
+    margin-right: 25%;
+    margin-left:5%;
+    
+}
+
+.mprev {
+     margin-top: 40px;
+
+    
+}
+
+.mprev img{
+    padding-right: 70px;
+    width: 110px;
+}
+
+.mnext {
+    margin-top: 40px;
+  
+   
+}
+
+.mnext img{
+    padding-left: 70px;
+     width: 110px;
+}
+
+.mprin{
+    position: static;
+    
+}
+
+.mtextP {
+    margin-bottom:20px;
+    font-family: 'Fjalla';
+}
