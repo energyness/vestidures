@@ -135,9 +135,10 @@ CSS custom
 }
 /* Social buttons*/
 .social_phoneH{
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
     width:500px;
+    padding-left: 20px;
 }
 
 .butH{
@@ -227,7 +228,7 @@ CSS custom
 
 /* Facebook & Blog Vestidures */
 .m_social{
- margin-bottom:55px;
+ margin-bottom:15px;
 }
 
 /*==================================================================
@@ -362,7 +363,8 @@ CSS custom
 
     .social_phoneH{
         width: auto;
-
+        padding-top:20px ;
+        margin-bottom: 10px;
     }
     .butH{
         /*width: 33.3333%;*/
@@ -393,6 +395,8 @@ CSS custom
         padding-left: 10px; 
         background-color: white;
         margin-bottom: 60px;
+        line-height: 23pt;
+        
 
     }
 
@@ -526,7 +530,7 @@ CSS custom
 }
 
 .shNav {
-    height:25px;
+    height:45px;
     margin-right: 10%;
     margin-left:10%;
     background-repeat:no-repeat;
@@ -581,4 +585,9 @@ CSS custom
 
 .mprin{
     position: static;
+    
+}
+
+.mtextP {
+    margin-bottom:20px;
 }

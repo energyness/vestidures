@@ -605,6 +605,8 @@ CSS custom
 	margin-top: 80px;
 	margin-bottom: 35px;
 	padding-left: 30px; 
+    font-family:'National';
+    
 }
 
 .principis div p{
@@ -621,6 +623,9 @@ CSS custom
 .myhrD{
 	width:320px;
 	color:#808080;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .likeB{
@@ -690,8 +695,8 @@ CSS custom
 
 /*Principis*/
 .imgP{
-    margin-top: 20px;
-    padding-left: 60px;
+    margin-top: 38px;
+    padding-left: 45px;
 }
 .imgP img{
     width:80%;
@@ -844,8 +849,8 @@ CSS custom
 
 .pn img{
     width:35%;
-    margin-left:-33px;
-    margin-top: 5px
+    margin-left:-38px;
+    margin-top: -13px
 
 }
 
@@ -865,3 +870,7 @@ CSS custom
 }
 
 
+
+.imV {
+    text-align:left;
+}
