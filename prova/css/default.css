@@ -37,6 +37,20 @@ src: url('../fonts/National-Regular.otf');
     /*,url('Sansation_Light.eot'); /* IE9 */
 }
 
+@font-face
+{
+font-family: "NationalBI";
+src: url('../fonts/National-BoldItalic.otf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
+
+@font-face
+{
+font-family: "NationalB";
+src: url('../fonts/National-Bold.otf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
+
 
 body {
         padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
