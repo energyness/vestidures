@@ -337,11 +337,13 @@ CSS custom
         font-family: "Trebuchet";
         color: #606060;
         font-style: normal;
+        line-height:15pt;
 
     }
 
     #footer .link_foot{
         color:#999999;
+        line-height:15pt;
 
     }
 
