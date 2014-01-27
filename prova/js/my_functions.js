@@ -181,8 +181,8 @@ function wait(button, seg){
 
 /*FOOTER*/
 //Set footer at the bootom of the page for about/thanks/contact pages
-h= $(window).height();
-$('.terra').css('margin-top', h-400);
+/*h= $(window).height();
+$('.terra').css('margin-top', h-400);*/
 
 
 /*Other stuff*/
