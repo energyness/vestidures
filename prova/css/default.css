@@ -290,7 +290,7 @@ CSS custom
 	font-family: "Arial2";
 	text-align:center; 
     color:white;
-    font-size: 13pt;
+    font-size: 18px;
     font-weight: 100;
     line-height: 20pt;
 
@@ -300,7 +300,7 @@ CSS custom
     right:0;
   
     top:633px;
-    width:500px;
+    width:465px;
     position:absolute;
 
 }
