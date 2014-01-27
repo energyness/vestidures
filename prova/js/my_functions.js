@@ -180,10 +180,28 @@ function wait(button, seg){
 }
 
 /*FOOTER*/
-//Set footer at the bootom of the page for about/thanks/contact pages
-/*h= $(window).height();
-$('.terra').css('margin-top', h-400);*/
+//Set footer at the bootom of the page for about/thanks/contact pages mobile version
+w = $(window).width();
+    var text = document.getElementsByClassName('about')[0]
 
+    var n=  text.offsetHeight +10;
+    $(window).resize(function(){
+            w = $(window).width(); // get new width after change
+            if(w < 796){
+               $('.terra').css({
+                   'margin-top': n,
+                   'position' : 'static'
+               
+               });
+            }
+    });
+if(w < 796){
+   $('.terra').css({
+       'margin-top': n,
+       'position' : 'static'
+   
+   });
+}
 
 /*Other stuff*/
 //Fit elements
