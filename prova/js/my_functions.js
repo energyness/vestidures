@@ -34,7 +34,7 @@ $(function() {
   });
 
 $(function() {        
-    $(".fixB").floatingFixed({ padding: 130 });
+    $(".fixB").floatingFixed({ padding: 170 });
 
   });
 
