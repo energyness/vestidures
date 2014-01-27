@@ -458,14 +458,15 @@ CSS custom
     
     .textoV{
         font-size: 14pt;
-        font-family:'Times';
+        font-family:'National';
         line-height:16pt;
     }
     
     .introV{
        font-size: 14pt;
+        font-weight:;
         line-height:16pt;
-        font-family: 'Times';
+        font-family: 'NationalB';
         
     }
     
