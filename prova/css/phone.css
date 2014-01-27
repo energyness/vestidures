@@ -457,14 +457,15 @@ CSS custom
     }
     
     .textoV{
-        font-size: 16pt;
+        font-size: 14pt;
         font-family:'National';
+        line-height:16pt;
     }
     
     .introV{
-       font-size: 16pt;
+       font-size: 14pt;
         font-weight:;
-        line-height:18pt;
+        line-height:16pt;
         font-family: 'NationalB';
         
     }
