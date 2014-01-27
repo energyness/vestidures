@@ -77,7 +77,7 @@ CSS custom
     font-style: italic;
     text-align: center;
     letter-spacing: 2px;
-    font-size: 28px;
+    font-size: 24px;
     font-family: "Trebuchet";
     color:#3d3d3d;
     margin-top: -10px;
@@ -138,7 +138,7 @@ CSS custom
     margin-top: 50px;
     margin-bottom: 20px;
     width:500px;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .butH{
@@ -156,9 +156,9 @@ CSS custom
     z-index:200;
 }
 
-.gbuttH{
+.gbuttH div{
    /*text-align: left;*/
-   
+   padding-left: 0px;
 }
 
 /* Collapse menu dropdown*/
@@ -337,11 +337,13 @@ CSS custom
         font-family: "Trebuchet";
         color: #606060;
         font-style: normal;
+        line-height:15pt;
 
     }
 
     #footer .link_foot{
         color:#999999;
+        line-height:15pt;
 
     }
 
@@ -449,12 +451,25 @@ CSS custom
         font-size: 14px;
         line-height: 12pt;
         text-align: center;
-        font-family:'Rosario';
     
     }
     
     .principis div a img{
         margin-top: 0px;
+    }
+    
+    .textoV{
+        font-size: 14pt;
+        font-family:'National';
+        line-height:16pt;
+    }
+    
+    .introV{
+       font-size: 14pt;
+        font-weight:;
+        line-height:16pt;
+        font-family: 'NationalB';
+        
     }
     
 }
@@ -530,12 +545,13 @@ CSS custom
 }
 
 .shNav {
-    height:45px;
-    margin-right: 10%;
-    margin-left:10%;
+    height:35px;
+    margin-right: 1%;
+    margin-left:1%;
     background-repeat:no-repeat;
     background-position:center; 
-    
+     background-size: 315px;
+   
 }
 
 
@@ -566,6 +582,8 @@ CSS custom
 
 .mprev {
      margin-top: 40px;
+
+    
 }
 
 .mprev img{
@@ -575,7 +593,8 @@ CSS custom
 
 .mnext {
     margin-top: 40px;
-    
+  
+   
 }
 
 .mnext img{
@@ -590,4 +609,9 @@ CSS custom
 
 .mtextP {
     margin-bottom:20px;
+    font-family: 'Fjalla';
+}
+
+.socialV {
+    margin-top:10px;
 }

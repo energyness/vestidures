@@ -37,6 +37,20 @@ src: url('../fonts/National-Regular.otf');
     /*,url('Sansation_Light.eot'); /* IE9 */
 }
 
+@font-face
+{
+font-family: "NationalBI";
+src: url('../fonts/National-BoldItalic.otf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
+
+@font-face
+{
+font-family: "NationalB";
+src: url('../fonts/National-Bold.otf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
+
 
 body {
         padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -290,9 +304,9 @@ CSS custom
 	font-family: "Arial2";
 	text-align:center; 
     color:white;
-    font-size: 14pt;
+    font-size: 16px;
     font-weight: 100;
-    line-height: 20pt;
+    line-height:18pt;
 
     
     margin: 0 auto;
@@ -300,7 +314,7 @@ CSS custom
     right:0;
   
     top:633px;
-    width:500px;
+    width:465px;
     position:absolute;
 
 }
@@ -579,7 +593,7 @@ CSS custom
 } 
 
 #disqus_thread{
-  margin-top: 60px;
+  margin-top: 30px;
   width: 320px;
 }
 
@@ -661,17 +675,17 @@ CSS custom
 	text-align:center; 
     font-size: 14pt;
     font-weight: 100;
-    line-height: 20pt;
+    line-height: 18pt;
     font-family:'Times';
     
     margin: 0 auto;
     left:0;
     right:0;
     
-    margin-top:50px;
+    margin-top:30px;
   
     
-    width:500px;
+    width:450px;
 }
 
 .textoV p{
@@ -688,14 +702,16 @@ CSS custom
     background-color: transparent;
 	font-family: "Times";
 	text-align:center; 
-    font-size: 34pt;
+    font-size: 24pt;
     font-weight: 100;
-    line-height: 40pt;
+    line-height: 27pt;
+    margin-bottom:15px;
+   
 }
 
 /*Principis*/
 .imgP{
-    margin-top: 38px;
+    margin-top: 28px;
     padding-left: 45px;
 }
 .imgP img{
@@ -704,12 +720,11 @@ CSS custom
 }
 
 .textP {
-    width:320px;
-    font-size:25px;
+    width:323px;
+    font-size:30px;
     margin-left: -80px;
-    line-height: 23pt;
+    line-height: 25pt;
     font-family: 'Fjalla';
-    
 }
 
 .textP .man{
@@ -851,7 +866,7 @@ CSS custom
 .pn img{
     width:35%;
     margin-left:-38px;
-    margin-top: -13px
+    margin-top: 3px
 
 }
 
@@ -871,5 +886,27 @@ CSS custom
 }
 
 
+
+
+
+
+
+.twbuttH {
+    padding-left:30px;
+}
+
+
+
+
+
+
+
+.terra {
+       position:fixed;
+   left:0px;
+   bottom:0px;
+    width:100%;
+    
+}
 
 

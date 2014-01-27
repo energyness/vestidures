@@ -1,6 +1,10 @@
 /*==================================================================
 MY JS Functions
 ====================================================================*/
+$(document).ready(function() {
+  $('#eng').tooltip();
+  $('#eusk').tooltip();
+});
 //This functions allows the like button to not dissapear if diplay:none from the beggining
 setTimeout(function() {
     
@@ -29,31 +33,40 @@ $(function() {
 
   });
 
+$(function() {        
+    $(".fixB").floatingFixed({ padding: 170 });
+
+  });
+
 //Allow rigth horizontal buttons positioning 
 $(function() {
     var text = document.getElementsByClassName('texto2')[0]
 
-    var n=  text.offsetHeight + 525;
+    var n=  text.offsetHeight + 555;
 
     w = $(window).width();
 
     $(window).resize(function(){
-        w = $(window).width(); // get new width after change
+            w = $(window).width(); // get new width after change
             if(w < 992 ){
-        $('.social_phoneH ').css('margin-top', '20px');
+        $('.arroW').css('margin-top', '60px');      
+        
         }
         else{
-         $('.social_phoneH ').css('margin-top', n);
+         $('.arroW').css('margin-top', n);  
+         
 
        }
         
     });
 
     if(w < 992 ){
-        $('.social_phoneH ').css('margin-top', '20px');
+        $('.arroW').css('margin-top', '60px'); 
+        
     }
     else{
-     $('.social_phoneH ').css('margin-top', n);
+    $('.arroW').css('margin-top', n); 
+     
 
    }
 });
@@ -167,10 +180,28 @@ function wait(button, seg){
 }
 
 /*FOOTER*/
-//Set footer at the bootom of the page for about/thanks/contact pages
-h= $(window).height();
-$('.terra').css('margin-top', h-500);
+//Set footer at the bootom of the page for about/thanks/contact pages mobile version
+w = $(window).width();
+    var text = document.getElementsByClassName('about')[0]
 
+    var n=  text.offsetHeight +10;
+    $(window).resize(function(){
+            w = $(window).width(); // get new width after change
+            if(w < 796){
+               $('.terra').css({
+                   'margin-top': n,
+                   'position' : 'static'
+               
+               });
+            }
+    });
+if(w < 796){
+   $('.terra').css({
+       'margin-top': n,
+       'position' : 'static'
+   
+   });
+}
 
 /*Other stuff*/
 //Fit elements
@@ -191,32 +222,67 @@ $('.terra').css('margin-top', h-500);
 //Simulate hover on mobile 
 (function () {
   var count = 0;
+  var count2 = 0; 
 
   $('.btn-custom').click(function () {
     count += 1;
-    if (count%2==0) {
+    if (count%2==0) { 
       $(this).removeClass("btn-background-hov");
       $(this).addClass("btn-background");
+       
     }
     else{
       $(this).removeClass("btn-background");
       $(this).addClass("btn-background-hov");
+        /*$('#yey').show();
+        
+            if (count2%2!=0){
+                 $('#yeyS').hide();
+                 $('.btn-custom2').removeClass("btn-background-hov2");
+                 $('.btn-custom2').addClass("btn-background2");
+                 count2 +=1 
+            }*/
+        
     }
+  });
+    
+    $('.btn-custom2').click(function () {
+        count2 += 1;
+        if (count2%2==0) {
+          $(this).removeClass("btn-background-hov2");
+          $(this).addClass("btn-background2");
+    
+        }
+        else{
+          $(this).removeClass("btn-background2");
+          $(this).addClass("btn-background-hov2");
+             /*$('#yeyS').show();
+            if (count%2!=0){
+                 $('#yey').hide();
+                 $('.btn-custom').removeClass("btn-background-hov");
+                 $('.btn-custom').addClass("btn-background");
+                 count +=1 
+            }*/
+        }
+        
+        
+        
+    
   });
 })();
 
+
+
+
+
+
 /*NOT USED */
 //Funció per canvia els textos quan fas click sobre idioma seleccionat (mobile version)
-function changeTextM(text, enter)
+function changeTextM(text)
 {
-    var display = document.getElementById('intext');
+    var display = document.getElementById('eng')[0];
     display.innerHTML = "";
     display.innerHTML = text;
-
-    var display = document.getElementById('enter2');
-    display.innerHTML = "";
-    display.innerHTML = enter;
-
 
 }
 //We select a language and the button 'Go' get the desired url for the language
