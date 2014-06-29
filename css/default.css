@@ -32,6 +32,13 @@ src: url('../fonts/times.ttf');
 
 @font-face
 {
+font-family: "Timesi";
+src: url('../fonts/timesi.ttf');
+    /*,url('Sansation_Light.eot'); /* IE9 */
+}
+
+@font-face
+{
 font-family: "National";
 src: url('../fonts/National-Regular.otf');
     /*,url('Sansation_Light.eot'); /* IE9 */
@@ -276,7 +283,7 @@ CSS custom
 
 /*Intro and mandales text */
 .texto_intro{
-	font-family: "Arial2";
+	font-family: "Timesi";
 	/*font-style: italic;*/
 	text-align:center; 
     color:white;
@@ -284,7 +291,7 @@ CSS custom
     width:650px;
     font-size: 12pt;
     line-height: 24pt;
-    font-weight: 100 !important;
+    /*font-weight: 100 !important;*/
 
     margin: 0 auto;
     left:0;
@@ -320,6 +327,29 @@ CSS custom
 }
 .texto2 p{
 	margin-bottom:10pt;
+}
+
+.links-v {
+	background-color: transparent;
+	font-family: "Arial2";
+	text-align:center; 
+    color:blue;
+    font-size: 16px;
+    font-weight: 100;
+    line-height:18pt;
+
+    margin: 0 auto;
+    left:0;
+    right:0;
+
+    padding-top: 20px;
+
+    width:465px;
+
+}
+
+.links-v a{
+	color:blue;
 }
 
 /*About, Agraiments, Contacte */

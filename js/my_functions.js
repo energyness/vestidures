@@ -13,6 +13,17 @@ setTimeout(function() {
 
 }, 5000);
 
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=300,height=380,toolbar=no,status=no,resizable=0,menubar=no,location=no,directories=no,scrollbars=no');
+return false;
+}
 /*TEXT*/
 //Change titles when you hover an image
 function changeText(text)
