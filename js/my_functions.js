@@ -4,7 +4,16 @@ MY JS Functions
 $(document).ready(function() {
   $('#eng').tooltip();
   $('#eusk').tooltip();
+
+
 });
+
+$('.whiteD').hide()
+setTimeout(function() {
+    
+  $('.whiteD').show()
+
+}, 5);
 //This functions allows the like button to not dissapear if diplay:none from the beggining
 setTimeout(function() {
     

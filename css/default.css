@@ -503,6 +503,10 @@ CSS custom
 	font-size: 11pt;
 }
 
+#footer .power a:hover{
+	color: #ffff47 !important;
+}
+
 #footer .link_foot{
 	padding-top: 15px;
 	color:#3d3d3d;
@@ -513,7 +517,7 @@ CSS custom
 	font-family: "Arial Narrow2";
 	font-size: 12pt;
 	text-decoration: none;
-	color:#3d3d3d;
+	color:#3d3d3d; 
 }
 
 #footer a:hover{
@@ -634,6 +638,7 @@ CSS custom
 /*White DIV*/
 
 .whiteD{
+	display:none;
     background-color: white;
     z-index: 5000;
     position:relative;
